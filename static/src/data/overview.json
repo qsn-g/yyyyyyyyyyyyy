@@ -1,0 +1,412 @@
+{
+    "nodes": [
+        {
+            "name": "FB",
+            "ind": 0,
+            "value": 0,
+            "level": 0
+        },
+        {
+            "name": "region3",
+            "ind": 2722,
+            "value": 269,
+            "level": 1
+        },
+        {
+            "name": "region3_school16",
+            "ind": 161,
+            "value": 54,
+            "level": 2
+        },
+        {
+            "name": "region3_school16_major62",
+            "ind": 162,
+            "value": 54,
+            "level": 3
+        },
+        {
+            "name": "region1",
+            "ind": 2602,
+            "value": 534,
+            "level": 1
+        },
+        {
+            "name": "region1_school23",
+            "ind": 413,
+            "value": 84,
+            "level": 2
+        },
+        {
+            "name": "region1_school23_major34",
+            "ind": 414,
+            "value": 84,
+            "level": 3
+        },
+        {
+            "name": "region1_school41",
+            "ind": 524,
+            "value": 37,
+            "level": 2
+        },
+        {
+            "name": "region1_school41_major52",
+            "ind": 525,
+            "value": 37,
+            "level": 3
+        },
+        {
+            "name": "region3_school10",
+            "ind": 758,
+            "value": 78,
+            "level": 2
+        },
+        {
+            "name": "region3_school10_major81",
+            "ind": 759,
+            "value": 78,
+            "level": 3
+        },
+        {
+            "name": "region1_school42",
+            "ind": 971,
+            "value": 71,
+            "level": 2
+        },
+        {
+            "name": "region1_school42_major34",
+            "ind": 972,
+            "value": 71,
+            "level": 3
+        },
+        {
+            "name": "region1_school43",
+            "ind": 1088,
+            "value": 39,
+            "level": 2
+        },
+        {
+            "name": "region1_school43_major81",
+            "ind": 1089,
+            "value": 39,
+            "level": 3
+        },
+        {
+            "name": "region1_school6",
+            "ind": 1208,
+            "value": 40,
+            "level": 2
+        },
+        {
+            "name": "region1_school6_major52",
+            "ind": 1209,
+            "value": 40,
+            "level": 3
+        },
+        {
+            "name": "region1_school49",
+            "ind": 1484,
+            "value": 92,
+            "level": 2
+        },
+        {
+            "name": "region1_school49_major34",
+            "ind": 1485,
+            "value": 92,
+            "level": 3
+        },
+        {
+            "name": "region1_school39",
+            "ind": 1598,
+            "value": 38,
+            "level": 2
+        },
+        {
+            "name": "region1_school39_major52",
+            "ind": 1599,
+            "value": 38,
+            "level": 3
+        },
+        {
+            "name": "region3_school14",
+            "ind": 1700,
+            "value": 34,
+            "level": 2
+        },
+        {
+            "name": "region3_school14_major42",
+            "ind": 1701,
+            "value": 34,
+            "level": 3
+        },
+        {
+            "name": "region3_school15",
+            "ind": 1829,
+            "value": 43,
+            "level": 2
+        },
+        {
+            "name": "region3_school15_major14",
+            "ind": 1830,
+            "value": 43,
+            "level": 3
+        },
+        {
+            "name": "region4",
+            "ind": 1939,
+            "value": 37,
+            "level": 1
+        },
+        {
+            "name": "region4_school19",
+            "ind": 1940,
+            "value": 37,
+            "level": 2
+        },
+        {
+            "name": "region4_school19_major21",
+            "ind": 1941,
+            "value": 37,
+            "level": 3
+        },
+        {
+            "name": "region2",
+            "ind": 2467,
+            "value": 68,
+            "level": 1
+        },
+        {
+            "name": "region2_school21",
+            "ind": 2069,
+            "value": 43,
+            "level": 2
+        },
+        {
+            "name": "region2_school21_major31",
+            "ind": 2070,
+            "value": 43,
+            "level": 3
+        },
+        {
+            "name": "region1_school1",
+            "ind": 2333,
+            "value": 88,
+            "level": 2
+        },
+        {
+            "name": "region1_school1_major52",
+            "ind": 2334,
+            "value": 88,
+            "level": 3
+        },
+        {
+            "name": "region3_school9",
+            "ind": 2393,
+            "value": 20,
+            "level": 2
+        },
+        {
+            "name": "region3_school9_major34",
+            "ind": 2394,
+            "value": 20,
+            "level": 3
+        },
+        {
+            "name": "region2_school4",
+            "ind": 2468,
+            "value": 25,
+            "level": 2
+        },
+        {
+            "name": "region2_school4_major34",
+            "ind": 2469,
+            "value": 25,
+            "level": 3
+        },
+        {
+            "name": "region1_school52",
+            "ind": 2603,
+            "value": 45,
+            "level": 2
+        },
+        {
+            "name": "region1_school52_major31",
+            "ind": 2604,
+            "value": 45,
+            "level": 3
+        },
+        {
+            "name": "region3_school11",
+            "ind": 2723,
+            "value": 40,
+            "level": 2
+        },
+        {
+            "name": "region3_school11_major48",
+            "ind": 2724,
+            "value": 40,
+            "level": 3
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 2722
+        },
+        {
+            "source": 2722,
+            "target": 161
+        },
+        {
+            "source": 161,
+            "target": 162
+        },
+        {
+            "source": 0,
+            "target": 2602
+        },
+        {
+            "source": 2602,
+            "target": 413
+        },
+        {
+            "source": 413,
+            "target": 414
+        },
+        {
+            "source": 2602,
+            "target": 524
+        },
+        {
+            "source": 524,
+            "target": 525
+        },
+        {
+            "source": 2722,
+            "target": 758
+        },
+        {
+            "source": 758,
+            "target": 759
+        },
+        {
+            "source": 2602,
+            "target": 971
+        },
+        {
+            "source": 971,
+            "target": 972
+        },
+        {
+            "source": 2602,
+            "target": 1088
+        },
+        {
+            "source": 1088,
+            "target": 1089
+        },
+        {
+            "source": 2602,
+            "target": 1208
+        },
+        {
+            "source": 1208,
+            "target": 1209
+        },
+        {
+            "source": 2602,
+            "target": 1484
+        },
+        {
+            "source": 1484,
+            "target": 1485
+        },
+        {
+            "source": 2602,
+            "target": 1598
+        },
+        {
+            "source": 1598,
+            "target": 1599
+        },
+        {
+            "source": 2722,
+            "target": 1700
+        },
+        {
+            "source": 1700,
+            "target": 1701
+        },
+        {
+            "source": 2722,
+            "target": 1829
+        },
+        {
+            "source": 1829,
+            "target": 1830
+        },
+        {
+            "source": 0,
+            "target": 1939
+        },
+        {
+            "source": 1939,
+            "target": 1940
+        },
+        {
+            "source": 1940,
+            "target": 1941
+        },
+        {
+            "source": 0,
+            "target": 2467
+        },
+        {
+            "source": 2467,
+            "target": 2069
+        },
+        {
+            "source": 2069,
+            "target": 2070
+        },
+        {
+            "source": 2602,
+            "target": 2333
+        },
+        {
+            "source": 2333,
+            "target": 2334
+        },
+        {
+            "source": 2722,
+            "target": 2393
+        },
+        {
+            "source": 2393,
+            "target": 2394
+        },
+        {
+            "source": 2467,
+            "target": 2468
+        },
+        {
+            "source": 2468,
+            "target": 2469
+        },
+        {
+            "source": 2602,
+            "target": 2603
+        },
+        {
+            "source": 2603,
+            "target": 2604
+        },
+        {
+            "source": 2722,
+            "target": 2723
+        },
+        {
+            "source": 2723,
+            "target": 2724
+        }
+    ]
+}
