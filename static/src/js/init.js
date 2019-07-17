@@ -2,7 +2,7 @@ var color = d3.scaleOrdinal().range(["#b52b2b", "#63a375","#87bcde","#d57a66"])
 var composeCount = 1;
 var currentID = 'tab1';
 var width, height;
-
+var empty;
 var fb_overview_data;
 
 var forceDict = {};

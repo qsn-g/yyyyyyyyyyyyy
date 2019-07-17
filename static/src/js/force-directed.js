@@ -84,10 +84,10 @@ $("#hisBut").click(function() {
             // }else if(d.target==n_data[name]){
             //     n=n_data.indexOf(d.source == n_data[name])
             //     d.target = n_data[n]
-            // }           
-        }); 
+            // }
+        });
 
-        
+
         // console.log(e_data)
         // force
         //     .nodes(n_data)
@@ -117,12 +117,12 @@ $("#hisBut").click(function() {
             .data(n_data)
             .enter().append("g")
             .attr("class", "node");
-            
+
 
         node.append('circle')
             .attr('class', function (d) { return 'node' + currentID + " " + currentID + "-" + d.name; })
             .attr('r', 1)
-            .attr('fill', "red")        
+            .attr('fill', "red")
             .attr('cx',function(d){return d.cx;})
             .attr('cy',function(d){return d.cy;})
             .call(d3.drag().on("drag", dragged));
@@ -247,6 +247,7 @@ $.get("/overview",function(data,status){
         // =========== events =============
         node.on('mouseover', function(d){
             if(d.level != 0){
+              console.log(selData[currentID])
                 if(selData[currentID]['close'] == true) {
                     $("#sel" + currentID).position({
                         my: "left top",
@@ -257,6 +258,7 @@ $.get("/overview",function(data,status){
                     $("#selbut"+currentID).css("visibility", "hidden");
                     $("#sel"+currentID).css("visibility", "visible");
                     selData[currentID]["close"] = false;
+
                 }
                 if(!(d.name in selData[currentID]['items'])) {
                     updateNodes();
@@ -264,7 +266,7 @@ $.get("/overview",function(data,status){
                         '" style="background-color: ' + hexToRGB(color(infoDict[d.name]['level']), 0.4) + '">' +
                             '<button type="button" class="btn btn-light btn-xs sbclose" id="sbclose-' + d.name + '"> X </button>' +
                             '<div class="sbinfo">' +
-                                '<h6> name: ' + d.name + ' </h6>' +
+                                '<h6> name: ' + d.show_name + ' </h6>' +
                                 '<h6> FBusers: ' + infoDict[d.name]['value'] + ' </h6>' +
                                 '<h6> level: ' + infoDict[d.name]['level'] + ' </h6>' +
                             '</div>' +
@@ -327,7 +329,7 @@ $.get("/overview",function(data,status){
         d.fy = null;
     }
 
-}  
+}
 function drawOnetab() {
     // drawall();
     drawOverview();

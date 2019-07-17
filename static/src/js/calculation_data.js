@@ -1,4 +1,17 @@
 // var msg=["major34", "region4"];
+// function cal(msg){
+//   $.post('/detail',msg,function(data,status){
+//     console.log(data)
+//     empty = data
+//     return empty;
+//   })
+// }
+
+
+
+
+
+
 function calculation(msg){
 
     //var d=$.Deferred();

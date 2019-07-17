@@ -7,240 +7,320 @@
     },
     "region3": {
         "name": "region3",
+        "show_name": "region3",
+        "pass": [],
         "ind": 2722,
         "value": 269,
         "level": 1
     },
-    "region3_school16": {
-        "name": "region3_school16",
+    "region3school16": {
+        "name": "region3school16",
+        "show_name": "school16",
+        "pass": [],
         "ind": 161,
         "value": 54,
         "level": 2
     },
-    "region3_school16_major62": {
-        "name": "region3_school16_major62",
+    "region3school16major62": {
+        "name": "region3school16major62",
+        "show_name": "major62",
+        "pass": [],
         "ind": 162,
         "value": 54,
         "level": 3
     },
     "region1": {
         "name": "region1",
+        "show_name": "region1",
+        "pass": [],
         "ind": 2602,
         "value": 534,
         "level": 1
     },
-    "region1_school23": {
-        "name": "region1_school23",
+    "region1school23": {
+        "name": "region1school23",
+        "show_name": "school23",
+        "pass": [],
         "ind": 413,
         "value": 84,
         "level": 2
     },
-    "region1_school23_major34": {
-        "name": "region1_school23_major34",
+    "region1school23major34": {
+        "name": "region1school23major34",
+        "show_name": "major34",
+        "pass": [],
         "ind": 414,
         "value": 84,
         "level": 3
     },
-    "region1_school41": {
-        "name": "region1_school41",
+    "region1school41": {
+        "name": "region1school41",
+        "show_name": "school41",
+        "pass": [],
         "ind": 524,
         "value": 37,
         "level": 2
     },
-    "region1_school41_major52": {
-        "name": "region1_school41_major52",
+    "region1school41major52": {
+        "name": "region1school41major52",
+        "show_name": "major52",
+        "pass": [],
         "ind": 525,
         "value": 37,
         "level": 3
     },
-    "region3_school10": {
-        "name": "region3_school10",
+    "region3school10": {
+        "name": "region3school10",
+        "show_name": "school10",
+        "pass": [],
         "ind": 758,
         "value": 78,
         "level": 2
     },
-    "region3_school10_major81": {
-        "name": "region3_school10_major81",
+    "region3school10major81": {
+        "name": "region3school10major81",
+        "show_name": "major81",
+        "pass": [],
         "ind": 759,
         "value": 78,
         "level": 3
     },
-    "region1_school42": {
-        "name": "region1_school42",
+    "region1school42": {
+        "name": "region1school42",
+        "show_name": "school42",
+        "pass": [],
         "ind": 971,
         "value": 71,
         "level": 2
     },
-    "region1_school42_major34": {
-        "name": "region1_school42_major34",
+    "region1school42major34": {
+        "name": "region1school42major34",
+        "show_name": "major34",
+        "pass": [],
         "ind": 972,
         "value": 71,
         "level": 3
     },
-    "region1_school43": {
-        "name": "region1_school43",
+    "region1school43": {
+        "name": "region1school43",
+        "show_name": "school43",
+        "pass": [],
         "ind": 1088,
         "value": 39,
         "level": 2
     },
-    "region1_school43_major81": {
-        "name": "region1_school43_major81",
+    "region1school43major81": {
+        "name": "region1school43major81",
+        "show_name": "major81",
+        "pass": [],
         "ind": 1089,
         "value": 39,
         "level": 3
     },
-    "region1_school6": {
-        "name": "region1_school6",
+    "region1school6": {
+        "name": "region1school6",
+        "show_name": "school6",
+        "pass": [],
         "ind": 1208,
         "value": 40,
         "level": 2
     },
-    "region1_school6_major52": {
-        "name": "region1_school6_major52",
+    "region1school6major52": {
+        "name": "region1school6major52",
+        "show_name": "major52",
+        "pass": [],
         "ind": 1209,
         "value": 40,
         "level": 3
     },
-    "region1_school49": {
-        "name": "region1_school49",
+    "region1school49": {
+        "name": "region1school49",
+        "show_name": "school49",
+        "pass": [],
         "ind": 1484,
         "value": 92,
         "level": 2
     },
-    "region1_school49_major34": {
-        "name": "region1_school49_major34",
+    "region1school49major34": {
+        "name": "region1school49major34",
+        "show_name": "major34",
+        "pass": [],
         "ind": 1485,
         "value": 92,
         "level": 3
     },
-    "region1_school39": {
-        "name": "region1_school39",
+    "region1school39": {
+        "name": "region1school39",
+        "show_name": "school39",
+        "pass": [],
         "ind": 1598,
         "value": 38,
         "level": 2
     },
-    "region1_school39_major52": {
-        "name": "region1_school39_major52",
+    "region1school39major52": {
+        "name": "region1school39major52",
+        "show_name": "major52",
+        "pass": [],
         "ind": 1599,
         "value": 38,
         "level": 3
     },
-    "region3_school14": {
-        "name": "region3_school14",
+    "region3school14": {
+        "name": "region3school14",
+        "show_name": "school14",
+        "pass": [],
         "ind": 1700,
         "value": 34,
         "level": 2
     },
-    "region3_school14_major42": {
-        "name": "region3_school14_major42",
+    "region3school14major42": {
+        "name": "region3school14major42",
+        "show_name": "major42",
+        "pass": [],
         "ind": 1701,
         "value": 34,
         "level": 3
     },
-    "region3_school15": {
-        "name": "region3_school15",
+    "region3school15": {
+        "name": "region3school15",
+        "show_name": "school15",
+        "pass": [],
         "ind": 1829,
         "value": 43,
         "level": 2
     },
-    "region3_school15_major14": {
-        "name": "region3_school15_major14",
+    "region3school15major14": {
+        "name": "region3school15major14",
+        "show_name": "major14",
+        "pass": [],
         "ind": 1830,
         "value": 43,
         "level": 3
     },
     "region4": {
         "name": "region4",
+        "show_name": "region4",
+        "pass": [],
         "ind": 1939,
         "value": 37,
         "level": 1
     },
-    "region4_school19": {
-        "name": "region4_school19",
+    "region4school19": {
+        "name": "region4school19",
+        "show_name": "school19",
+        "pass": [],
         "ind": 1940,
         "value": 37,
         "level": 2
     },
-    "region4_school19_major21": {
-        "name": "region4_school19_major21",
+    "region4school19major21": {
+        "name": "region4school19major21",
+        "show_name": "major21",
+        "pass": [],
         "ind": 1941,
         "value": 37,
         "level": 3
     },
     "region2": {
         "name": "region2",
+        "show_name": "region2",
+        "pass": [],
         "ind": 2467,
         "value": 68,
         "level": 1
     },
-    "region2_school21": {
-        "name": "region2_school21",
+    "region2school21": {
+        "name": "region2school21",
+        "show_name": "school21",
+        "pass": [],
         "ind": 2069,
         "value": 43,
         "level": 2
     },
-    "region2_school21_major31": {
-        "name": "region2_school21_major31",
+    "region2school21major31": {
+        "name": "region2school21major31",
+        "show_name": "major31",
+        "pass": [],
         "ind": 2070,
         "value": 43,
         "level": 3
     },
-    "region1_school1": {
-        "name": "region1_school1",
+    "region1school1": {
+        "name": "region1school1",
+        "show_name": "school1",
+        "pass": [],
         "ind": 2333,
         "value": 88,
         "level": 2
     },
-    "region1_school1_major52": {
-        "name": "region1_school1_major52",
+    "region1school1major52": {
+        "name": "region1school1major52",
+        "show_name": "major52",
+        "pass": [],
         "ind": 2334,
         "value": 88,
         "level": 3
     },
-    "region3_school9": {
-        "name": "region3_school9",
+    "region3school9": {
+        "name": "region3school9",
+        "show_name": "school9",
+        "pass": [],
         "ind": 2393,
         "value": 20,
         "level": 2
     },
-    "region3_school9_major34": {
-        "name": "region3_school9_major34",
+    "region3school9major34": {
+        "name": "region3school9major34",
+        "show_name": "major34",
+        "pass": [],
         "ind": 2394,
         "value": 20,
         "level": 3
     },
-    "region2_school4": {
-        "name": "region2_school4",
+    "region2school4": {
+        "name": "region2school4",
+        "show_name": "school4",
+        "pass": [],
         "ind": 2468,
         "value": 25,
         "level": 2
     },
-    "region2_school4_major34": {
-        "name": "region2_school4_major34",
+    "region2school4major34": {
+        "name": "region2school4major34",
+        "show_name": "major34",
+        "pass": [],
         "ind": 2469,
         "value": 25,
         "level": 3
     },
-    "region1_school52": {
-        "name": "region1_school52",
+    "region1school52": {
+        "name": "region1school52",
+        "show_name": "school52",
+        "pass": [],
         "ind": 2603,
         "value": 45,
         "level": 2
     },
-    "region1_school52_major31": {
-        "name": "region1_school52_major31",
+    "region1school52major31": {
+        "name": "region1school52major31",
+        "show_name": "major31",
+        "pass": [],
         "ind": 2604,
         "value": 45,
         "level": 3
     },
-    "region3_school11": {
-        "name": "region3_school11",
+    "region3school11": {
+        "name": "region3school11",
+        "show_name": "school11",
+        "pass": [],
         "ind": 2723,
         "value": 40,
         "level": 2
     },
-    "region3_school11_major48": {
-        "name": "region3_school11_major48",
+    "region3school11major48": {
+        "name": "region3school11major48",
+        "show_name": "major48",
+        "pass": [],
         "ind": 2724,
         "value": 40,
         "level": 3
