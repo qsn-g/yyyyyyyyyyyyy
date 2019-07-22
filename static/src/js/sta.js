@@ -11,7 +11,7 @@ var curSelected = { 'tabItem1':
     'tabItem2':
     ["", ""]
 }
-initSta();
+// initSta();
 var inputData;
 
 function initSta() {
@@ -29,6 +29,7 @@ function initSta() {
         "</div>")
 
         var seldata = $();
+
         for(var i in staData[id]['data']) {
             var each = staData[id]['data'][i];
             seldata = seldata.add('<option>'+each+'</option>');
@@ -41,7 +42,7 @@ function initSta() {
             selgraph = selgraph.add('<option>'+each+'</option>');
         }
         $('#selectGraph-'+id).append(selgraph)
-        drawGraph(id);
+        // drawGraph(id);
     }
 }
 
@@ -108,5 +109,5 @@ $(document).on('changed.bs.select', '.selectpicker', function (e, clickedIndex, 
     } else {
         curSelected[tabId][1] = staData[tabId]['graph'][clickedIndex];
     }
-    drawGraph(tabId);
+    // drawGraph(tabId);
 });

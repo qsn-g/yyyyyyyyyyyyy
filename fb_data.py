@@ -163,7 +163,6 @@ def output_json(u):
 		s_node['birthyear'] = v_birthyear[v]['birthyear']
 		s_node["cx"] = (pos[v][0]+600)/1.5
 		s_node["cy"] = (pos[v][1]+300)/1.5
-		print([s_node['cx'],s_node['cy']])
 		convert.append(v_userid[v]["userid"])
 		# o_node={}
 		# o_node[v_userid[v]["userid"]]=s_node
@@ -182,6 +181,38 @@ def output_json(u):
 		links.append(s_edge)
 	all_data['links']=links
 	return(all_data)
+#===============output_filter information=====
+def output_filter_v():
+	dictio={}
+	key=list(g.vertex_properties.keys())
+	value=list(g.vertex_properties.values())
+	fil={}
+	final={}
+	final['cat']={}
+	final['con']={}
+	for i in range(len(key)):
+		fil[key[i]]=set()
+		dictio[key[i]]= value[i]
+
+	for vertex in g.vertices():
+		for i in fil:
+			fil[i].add(dictio[i][vertex][i])
+
+	del fil['fbid']
+	del fil['userid']
+	del fil['major']
+	del fil['schregion']
+	del fil['school']
+	del fil['grade']
+	for i in fil:
+		fil[i]=list(fil[i])
+	for i in fil:
+		if len(fil[i])>5:
+			final["con"][i]=fil[i]
+		else:
+			final['cat'][i]=fil[i]
+
+	return(final)
 
 
 

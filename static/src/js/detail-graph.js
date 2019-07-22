@@ -21,10 +21,10 @@ function drawDetail() {
     		return "red";
     	}
     }
-console.log(selData[currentID])
+console.log(selData)
     var input = {}
-    for(var each in selData[parent[currentID]]['items']){
-        input[each]=(selData[parent[currentID]]['items'][each]['pass']);
+    for(var each in selData[currentID]['items']){
+        input[each]=(selData[currentID]['items'][each]['pass']);
     }
 
       $.post('/detail',JSON.stringify(input),function(data,status){
@@ -43,14 +43,14 @@ console.log(selData[currentID])
         //create somewhere to put the force directed graph
         var svg = d3.select("#" + currentID).append("svg")
             .attr("class", "svg")
-            .attr("id", "svg" + currentID)
+            .attr("id", "detailsvg" + currentID)
             .attr("width", width)
             .attr("height", height)
         var g = svg.append("g");
-        var simulation = d3.forceSimulation()
-           .force("link", d3.forceLink().id(function(d) { return d.name }));
+        // var simulation = d3.forceSimulation()
+        //    .force("link", d3.forceLink().id(function(d) { return d.name }));
 
-        forceDictDetail[currentID] = simulation;
+        // forceDictDetail[currentID] = simulation;
 
         //draw lines for the links
         var link = g.append("g")
@@ -97,8 +97,13 @@ console.log(selData[currentID])
                 .attr('cy',function(d){return d.cy})
                 .style('opacity', 0.7)
                 .call(d3.drag().on('drag',dragged));
+          node.each(function(d){
+            console.log(this)
+          })
                 // .attr("fill", circleColour)
-
+        // node.style('opacity',function(d){
+        //
+        // })
         function dragged(d) {
           d.x = d3.event.x, d.y = d3.event.y;
           d3.select(this).attr("cx", d.x).attr("cy", d.y);

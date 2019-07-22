@@ -138,3 +138,20 @@ svg {
 .sbinfo {
     margin: 35px 10px 10px 10px;
 }
+
+.activerecord{
+  display : none;
+}
+.filter_font{
+  color : "white";
+}
+.v_box{
+
+  padding-left: 5px;
+}
+.checkbox-inline + .checkbox-inline{
+  margin-left: 30px;
+}
+.fil_v{
+  padding-left: 20px;
+}

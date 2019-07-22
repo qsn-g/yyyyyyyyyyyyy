@@ -4,7 +4,6 @@ var currentID = 'tab1';
 var width, height;
 var empty;
 var fb_overview_data;
-
 var forceDict = {};
 var forceDictDetail = {};
 var instDict = {};
@@ -26,7 +25,13 @@ var prelink = {}, prenode = {};
 
 var calculatedData = {};
 
-
+var record={};
+var fil_v;
+$.get('/init',function(data,status){
+  fil_v=data
+  console.log(data)
+  initfilter()
+})
 
 d3.json("static/src/data/prenode.json", function(data){
     prenode = data;
@@ -67,6 +72,7 @@ height = $('#'+currentID).height() ;
 svgWidth = {1: width, 0: width+controlWidth}
 svgHeight = {1: height, 0: height+historyWidth}
 
+
 function hexToRGB(hex, alpha) {
     var r = parseInt(hex.slice(1, 3), 16),
         g = parseInt(hex.slice(3, 5), 16),
@@ -77,4 +83,33 @@ function hexToRGB(hex, alpha) {
     } else {
         return "rgb(" + r + ", " + g + ", " + b + ")";
     }
+}
+
+function recordevent(e,currentID){
+  if(!(currentID in Object.keys(record))){
+    record[currentID]=[]
+  }
+  var s_ope=[]
+  s_ope={
+    target:e.target.attributes,
+    type: e.type
+  }
+  record[currentID].push(s_ope
+  )
+  console.log(record)
+}
+
+
+
+function reimplement(){
+
+
+  record[currentID].forEach(function(elem){
+    var t = elem.target
+    var w_op=elem.type
+    console.log('.'+t)
+    $("#overnoderegion3").click()
+    // t['on'+elem.type]=true
+  })
+
 }

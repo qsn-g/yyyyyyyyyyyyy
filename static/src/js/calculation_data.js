@@ -1,26 +1,7 @@
-// var msg=["major34", "region4"];
-// function cal(msg){
-//   $.post('/detail',msg,function(data,status){
-//     console.log(data)
-//     empty = data
-//     return empty;
-//   })
-// }
-
-
-
-
-
-
 function calculation(msg){
-
-    //var d=$.Deferred();
-    //var promise = await new Promise((resolve,reject) => {
     var out_data = {};
-    //async function mess(){
           var node_data = {};
           var win = [];
-          // console.log (i)
           for (var i=0; i<msg.length; i++){
                 win[i]= prenode[msg[i]];
                 var arr = Object.keys(win[i]);
@@ -40,7 +21,7 @@ function calculation(msg){
            var win_l =[];
            for (var i=0 ; i<arr_node.length;i++){
               win_l =prelink["Nodeid"+arr_node[i]];
-              // console.log(win_l);
+  
              var array =Object.keys(win_l);
              for (var j= 0; j<array.length; j++){
                 link_data[array[j]] = win_l[array[j]];
@@ -53,13 +34,6 @@ function calculation(msg){
                    link_data_array.push(link_data[i]);
                }
            }//get link array
-
-         // console.log(node_data_array,link_data_array);
-
-         // out_data["statistic_birthyear"]=sta_birthyear;
-         // out_data["statistic_scorelevel"]=sta_scorelevel;
-         // out_data["statistic_marriage"]=sta_marriage;
-         // out_data["statistic_gender"]=sta_gender;
          out_data["node"]=node_data_array;
          out_data["link"]=link_data_array;
 

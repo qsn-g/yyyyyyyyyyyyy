@@ -61,6 +61,7 @@ function addItem(key, html) {
     selData[currentID]['count']++;
     if(!(key in selData[currentID]["items"])) {
         selData[currentID]["items"][key] = infoDict[key];
+        console.log(infoDict)
         if(selData[currentID]['close'] == true) {
             $("#sel" + currentID).position({
                 my: "left top",
@@ -85,7 +86,7 @@ function addItem(key, html) {
             )
         }
         updateNodes();
-        drawGraph("tabItem1");
+        // drawGraph("tabItem1");
     }
 }
 
@@ -101,7 +102,7 @@ function removeItem(key, decrease) {
     } else {
         updateNodes();
     }
-    drawGraph("tabItem1");
+    // drawGraph("tabItem1");
 }
 
 $(document).on('click', '.selbut', function(){
@@ -124,7 +125,7 @@ $(document).on('click', '.selclear', function(){
         $('#selbody' + currentID).append("<h6 id='selnothing' style='opacity: 0.5; margin-top:10px;'> Nothing Selected </h6>")
         setbackNodes();
         $('#submit' + currentID).remove();
-        drawGraph("tabItem1");
+        // drawGraph("tabItem1");
     }
 });
 

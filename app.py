@@ -9,6 +9,7 @@ import csv
 app = Flask(__name__, static_url_path='/static')
 g =my_form_post()
 hir=pre_dic()
+fil_v=output_filter_v()
 @app.route('/')
 def my_form():
     # jsondata = json.loads("static/src/data/FB_overview.json")
@@ -20,9 +21,9 @@ def my_view():
 		jsondata = json.load(load_f)
 	return jsondata
 
-@app.route('/request1', methods=['POST',"GET"])
-def alldata():
-	return(all_data())
+@app.route('/init', methods=["GET"])
+def fildata():
+	return fil_v
 
 @app.route('/detail', methods=['POST'])
 def select_data():

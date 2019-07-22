@@ -1,6 +1,10 @@
 $("#controlBut").click(function() {
     event.preventDefault();
     var dict;
+    console.log(parent)
+    console.log(selData)
+    console.log(forceDict)
+
     if(currentID in parent) {
         dict = forceDictDetail;
     } else {
@@ -216,7 +220,7 @@ function drawOverview() {
         .append("g")
 
 $.get("/overview",function(data,status){
-    console.log(data)
+
 
   fb_overview_data=data;
     // d3.json("static/src/data/FB_overview.json", function (error, fb_overview_data) {
@@ -234,6 +238,7 @@ $.get("/overview",function(data,status){
             .data(fb_overview_data.nodes)
             .enter().append("g")
             .attr("class", "node")
+            .attr('id',function(d){return 'overnode'+d.name})
             .call(d3.drag()
             .on("start", dragstarted)
             .on("drag", dragged)
@@ -247,7 +252,6 @@ $.get("/overview",function(data,status){
         // =========== events =============
         node.on('mouseover', function(d){
             if(d.level != 0){
-              console.log(selData[currentID])
                 if(selData[currentID]['close'] == true) {
                     $("#sel" + currentID).position({
                         my: "left top",
@@ -287,9 +291,13 @@ $.get("/overview",function(data,status){
                 }
             }
         }).on('click', function(d){
+              // recordevent(event,currentID)
+
             if(d.level != 0){
                 addItem(d.name, false);
             }
+
+
         });
 
         force.on("tick", function () {
@@ -310,6 +318,8 @@ $.get("/overview",function(data,status){
             });
         });
     // });
+
+drawSelected();
 
 });
     function dragstarted(d) {
@@ -334,6 +344,6 @@ function drawOnetab() {
     // drawall();
     drawOverview();
     // drawInstruction();
-    drawSelected();
+
 }
 drawOnetab()

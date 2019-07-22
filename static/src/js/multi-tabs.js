@@ -16,10 +16,13 @@ function newTab() {
 $('#new-tab').click(function (e) {
     newTab();
     drawOnetab();
+    $(".fil_v").attr("style","display:none;")
+
 })
 
 $(document).on('click', '.multi-link', function(){
     currentID = $(this)[0].id.substring(1);
+    console.log([currentID,$(this[0])])
     if(!(currentID in parent)) {
         $('#svg'+currentID).width(width)
         $('#svg'+currentID).height(height)
