@@ -160,6 +160,7 @@ def output_json(u):
 		s_node['liveplace']=v_liveplace[v]['liveplace']
 		s_node['height']=v_height[v]['height']
 		s_node['weight']=v_weight[v]['weight']
+		s_node['scorelevel']=v_scorelevel[v]['scorelevel']
 		s_node['birthyear'] = v_birthyear[v]['birthyear']
 		s_node["cx"] = (pos[v][0]+600)/1.5
 		s_node["cy"] = (pos[v][1]+300)/1.5

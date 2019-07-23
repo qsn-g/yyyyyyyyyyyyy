@@ -29,8 +29,8 @@ var record={};
 var fil_v;
 $.get('/init',function(data,status){
   fil_v=data
-  console.log(data)
   initfilter()
+
 })
 
 d3.json("static/src/data/prenode.json", function(data){

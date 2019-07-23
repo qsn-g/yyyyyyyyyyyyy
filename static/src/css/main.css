@@ -154,4 +154,6 @@ svg {
 }
 .fil_v{
   padding-left: 20px;
+  overflow: scroll;
+
 }

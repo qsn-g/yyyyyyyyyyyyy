@@ -14,9 +14,11 @@ function newTab() {
 }
 
 $('#new-tab').click(function (e) {
+
     newTab();
     drawOnetab();
     $(".fil_v").attr("style","display:none;")
+
 
 })
 

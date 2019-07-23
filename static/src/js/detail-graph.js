@@ -21,7 +21,7 @@ function drawDetail() {
     		return "red";
     	}
     }
-console.log(selData)
+
     var input = {}
     for(var each in selData[currentID]['items']){
         input[each]=(selData[currentID]['items'][each]['pass']);
@@ -36,7 +36,20 @@ console.log(selData)
           d.cy = parseFloat(d.cy)
         })
         data.links.forEach(function(d){
+          // var s_line={}
+          // s_line["cx"]=node_data[d.source]['cx']
+          // s_line["cy"]=node_data[d.source]['cy']
+          // s_line['s_id'] = node_data[d.source]['name']
+          // d.source = s_line
+          // d.source={"cx":node_data[d.source]["cx"],"cy":node_data[d.source]["cy"],"name":node_data[d.source]["name"]}
           d.source = node_data[d.source]
+          // var s_line={}
+          // s_line["cx"]=node_data[d.target]['cx']
+          // s_line["cy"]=node_data[d.target]['cy']
+          // s_line['s_id'] = node_data[d.target]['name']
+          // d.target = s_line
+          // d.target={"cx":node_data[d.target]["cx"],"cy":node_data[d.target]["cy"],"name":node_data[d.target]["name"]}
+
           d.target = node_data[d.target]
         })
 
@@ -70,6 +83,7 @@ console.log(selData)
             .attr('y2',function(d){
               return d.target.cy;
             })
+            .style("opacity", 0.7)
             .style("stroke", "grey")         // colour the line
             .style('stroke-width',0.5);
             // .style("stroke-width", function(d){
@@ -91,19 +105,33 @@ console.log(selData)
                 .data(node_data)
                 .enter()
                 .append("circle")
+                .attr('id',function(d){
+                return d.name
+                })
+                // .attr('class',function(d){
+                //   var att=''
+                //   k=Object.keys(d)
+                //   for (i in k){
+                //     att=att+k[i]+d[k[i]]+" "
+                //   }
+                //   return att
+                // })
                 .attr("r", 7)
                 .attr('fill','red')
                 .attr('cx',function(d){return d.cx})
                 .attr('cy',function(d){return d.cy})
                 .style('opacity', 0.7)
                 .call(d3.drag().on('drag',dragged));
-          node.each(function(d){
-            console.log(this)
-          })
+
                 // .attr("fill", circleColour)
         // node.style('opacity',function(d){
         //
         // })
+
+
+
+        checkboxOnClick(node,link);
+        // $("input[type=checkbox]").click();
         function dragged(d) {
           d.x = d3.event.x, d.y = d3.event.y;
           d3.select(this).attr("cx", d.x).attr("cy", d.y);
