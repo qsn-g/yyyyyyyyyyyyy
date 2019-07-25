@@ -93,7 +93,6 @@ def pre_dic():
 				new_hir[items].add(v_userid[w]['userid'])
 
 	hir = new_hir
-	print(hir)
 	return hir
 # ================all-data============
 def all_data():
@@ -212,6 +211,13 @@ def output_filter_v():
 			final["con"][i]=fil[i]
 		else:
 			final['cat'][i]=fil[i]
+	new={}
+	for i in final:
+		new[i]={}
+		for j in final[i]:
+			new[i][j]=[]
+	final['fil']=new
+	print(final)
 
 	return(final)
 

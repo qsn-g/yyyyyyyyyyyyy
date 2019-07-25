@@ -27,9 +27,15 @@ var calculatedData = {};
 
 var record={};
 var fil_v;
+var fil_user_o={}
 $.get('/init',function(data,status){
-  fil_v=data
-  initfilter()
+  for(var j in data['con']){
+    data['con'][j]=data['con'][j].map(Number)
+  }
+  fil_v={'con':data['con'],'cat':data['cat']}
+  fil_user_o = data['fil']
+
+  initfilter();
 
 })
 

@@ -57,7 +57,7 @@ init =
 
         controlPanel = { button = "X", status = Open, margin = "0px", maxHeight = "" }
 
-        historyPanel = { button = "src/rcs/down.png", status = Open, margin = "0px", maxHeight = "calc(100vh - 245px)" }
+        historyPanel = { button = "./static/src/rcs/down.png", status = Open, margin = "0px", maxHeight = "calc(100vh - 245px)" }
 
         colors = { control = "#a6a6a6", history = "#e6e6e6", historyButton = "#d9d9d9" }
 
@@ -111,14 +111,14 @@ update msg model =
             case model.historyPanel.status of
                 Open ->
                     let
-                        historyPanel = { button = "src/rcs/up.png", status = Close, margin = "-178px", maxHeight = "calc(100vh - 67px)" }
+                        historyPanel = { button = "./static/src/rcs/up.png", status = Close, margin = "-178px", maxHeight = "calc(100vh - 67px)" }
                     in
                     ( { model | historyPanel = historyPanel }
                     , Cmd.none
                     )
                 Close ->
                     let
-                        historyPanel = { button = "src/rcs/down.png", status = Open, margin = "0px", maxHeight = "calc(100vh - 245px)" }
+                        historyPanel = { button = "./static/src/rcs/down.png", status = Open, margin = "0px", maxHeight = "calc(100vh - 245px)" }
                     in
                     ( { model | historyPanel = historyPanel }
                     , Cmd.none
@@ -179,7 +179,7 @@ tab model =
                 ] [
                     select model,
                     div[
-                        style "height" "50%",
+                        style "height" "55%",
                         style "padding" "15px"
                     ] [
                     ] ]
@@ -195,7 +195,7 @@ tab model =
                 ] [
                     select model,
                     div[
-                        style "height" "50%",
+                        style "height" "55%",
                         style "padding" "15px"
                     ] [
                     ] ]
@@ -228,7 +228,7 @@ tab model =
 select : Model -> Html Msg
 select model =
         div [
-            style "height" "50%",
+            style "height" "45%",
             style "width" "100%",
             style "padding" "15px"
             -- style "background" model.colors.historyButton

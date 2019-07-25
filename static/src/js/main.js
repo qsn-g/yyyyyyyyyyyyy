@@ -5148,7 +5148,7 @@ var rundis$elm_bootstrap$Bootstrap$Tab$State = function (a) {
 var rundis$elm_bootstrap$Bootstrap$Tab$initialState = rundis$elm_bootstrap$Bootstrap$Tab$State(
 	{activeTab: elm$core$Maybe$Nothing, visibility: rundis$elm_bootstrap$Bootstrap$Tab$Showing});
 var author$project$Main$init = function () {
-	var historyPanel = {button: 'static/src/rcs/down.png', margin: '0px', maxHeight: 'calc(100vh - 245px)', status: author$project$Main$Open};
+	var historyPanel = {button: './static/src/rcs/down.png', margin: '0px', maxHeight: 'calc(100vh - 245px)', status: author$project$Main$Open};
 	var controlPanel = {button: 'X', margin: '0px', maxHeight: '', status: author$project$Main$Open};
 	var colors = {control: '#a6a6a6', history: '#e6e6e6', historyButton: '#d9d9d9'};
 	var _n0 = rundis$elm_bootstrap$Bootstrap$Navbar$initialState(author$project$Main$NavMsg);
@@ -5921,14 +5921,14 @@ var author$project$Main$update = F2(
 			case 'History':
 				var _n2 = model.historyPanel.status;
 				if (_n2.$ === 'Open') {
-					var historyPanel = {button: 'static/src/rcs/up.png', margin: '-178px', maxHeight: 'calc(100vh - 67px)', status: author$project$Main$Close};
+					var historyPanel = {button: './static/src/rcs/up.png', margin: '-178px', maxHeight: 'calc(100vh - 67px)', status: author$project$Main$Close};
 					return _Utils_Tuple2(
 						_Utils_update(
 							model,
 							{historyPanel: historyPanel}),
 						elm$core$Platform$Cmd$none);
 				} else {
-					var historyPanel = {button: 'static/src/rcs/down.png', margin: '0px', maxHeight: 'calc(100vh - 245px)', status: author$project$Main$Open};
+					var historyPanel = {button: './static/src/rcs/down.png', margin: '0px', maxHeight: 'calc(100vh - 245px)', status: author$project$Main$Open};
 					return _Utils_Tuple2(
 						_Utils_update(
 							model,
@@ -7571,7 +7571,7 @@ var author$project$Main$select = function (model) {
 		elm$html$Html$div,
 		_List_fromArray(
 			[
-				A2(elm$html$Html$Attributes$style, 'height', '50%'),
+				A2(elm$html$Html$Attributes$style, 'height', '45%'),
 				A2(elm$html$Html$Attributes$style, 'width', '100%'),
 				A2(elm$html$Html$Attributes$style, 'padding', '15px')
 			]),
@@ -8060,7 +8060,7 @@ var author$project$Main$tab = function (model) {
 									elm$html$Html$div,
 									_List_fromArray(
 										[
-											A2(elm$html$Html$Attributes$style, 'height', '50%'),
+											A2(elm$html$Html$Attributes$style, 'height', '55%'),
 											A2(elm$html$Html$Attributes$style, 'padding', '15px')
 										]),
 									_List_Nil)
@@ -8093,7 +8093,7 @@ var author$project$Main$tab = function (model) {
 									elm$html$Html$div,
 									_List_fromArray(
 										[
-											A2(elm$html$Html$Attributes$style, 'height', '50%'),
+											A2(elm$html$Html$Attributes$style, 'height', '55%'),
 											A2(elm$html$Html$Attributes$style, 'padding', '15px')
 										]),
 									_List_Nil)

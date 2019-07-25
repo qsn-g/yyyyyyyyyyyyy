@@ -130,7 +130,8 @@ function drawDetail() {
 
 
 
-        checkboxOnClick(node,link);
+        // checkboxOnClick(node,link);
+
         // $("input[type=checkbox]").click();
         function dragged(d) {
           d.x = d3.event.x, d.y = d3.event.y;
