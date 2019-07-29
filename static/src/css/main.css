@@ -154,16 +154,14 @@ svg {
 }
 .fil_v{
   height: 400px;
-  padding-left: 20px;
+  padding-left: 10px;
   overflow: scroll;
 }
 .con_v_all{
   height:300px;
   color: white;
 }
-/* .slider + .filter_font{
-  margin-left: 10px;
-} */
+
 .n_fil_con{
   padding-top:10px;
 }

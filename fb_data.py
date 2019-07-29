@@ -29,7 +29,7 @@ def my_form_post():
 	v_weight = g.new_vertex_property("object")
 
 	e_date = g.new_edge_property("object")
-	e_dailycount = g.new_edge_property("int")
+	e_dailycount = g.new_edge_property("object")
 	e_source = g.new_edge_property("int")
 	e_target = g.new_edge_property("int")
 	#set up the dictonary of vertexs
@@ -66,11 +66,14 @@ def my_form_post():
 	g.vertex_properties['height'] = v_height
 	g.vertex_properties['weight'] = v_weight
 
+	for e in range(len(edgesdata)):
+		edgesdata[e][2]=edgesdata[e][2].split('-')[0]
+
 	edges = {}
 	for e in range(len(edgesdata)):
 		edges[e] = g.add_edge(vet[edgesdata[e][0]],vet[edgesdata[e][1]])
 		e_date[edges[e]] = {'date': edgesdata[e][2]}
-		e_dailycount[edges[e]] = edgesdata[e][3]
+		e_dailycount[edges[e]] ={'dailycount': edgesdata[e][3]}
 		e_source[edges[e]] = edgesdata[e][0]
 		e_target[edges[e]] = edgesdata[e][1]
 	g.edge_properties["date"] = e_date
@@ -144,7 +147,7 @@ def need_data(received,g,hir):
 	return(u)
 #============output_graph_data_json=========
 def output_json(u):
-	pos = gt.sfdp_layout(u, p=2.6,K=90,C=1)
+	pos = gt.sfdp_layout(u, p=2.6,K=40,C=1)
 	nodes=[]
 	convert =[]
 	for v in u.vertices():
@@ -174,6 +177,8 @@ def output_json(u):
 		s_edge={}
 		s_edge['source'] = convert.index(str(e_source[e]))
 		s_edge['target'] = convert.index(str(e_target[e]))
+		s_edge['date']= e_date[e]['date']
+		s_edge['dailycount']= e_dailycount[e]['dailycount']
 		# s_edge['source_x'] = (pos[e.source()][0]+400)/1.5
 		# s_edge['source_y'] = (pos[e.source()][1]+300)/1.5
 		# s_edge['target_x'] = (pos[e.target()][0]+400)/1.5
@@ -193,17 +198,54 @@ def output_filter_v():
 	for i in range(len(key)):
 		fil[key[i]]=set()
 		dictio[key[i]]= value[i]
-
-	for vertex in g.vertices():
-		for i in fil:
-			fil[i].add(dictio[i][vertex][i])
-
 	del fil['fbid']
 	del fil['userid']
 	del fil['major']
 	del fil['schregion']
 	del fil['school']
 	del fil['grade']
+	for vertex in g.vertices():
+		for i in fil:
+			fil[i].add(dictio[i][vertex][i])
+
+
+	for i in fil:
+		fil[i]=list(fil[i])
+	for i in fil:
+		if len(fil[i])>5:
+			final["con"][i]=fil[i]
+		else:
+			final['cat'][i]=fil[i]
+	for i in final['con']:
+		final['con'][i]=list(filter(None, final['con'][i]))
+	new={}
+	for i in final:
+		new[i]={}
+		for j in final[i]:
+			new[i][j]=[]
+	final['fil']=new
+	return(final)
+
+def output_filter_e():
+	dictio={}
+	key=list(g.edge_properties.keys())
+	value=list(g.edge_properties.values())
+	fil={}
+	final={}
+	final['cat']={}
+	final['con']={}
+	for i in range(len(key)):
+		fil[key[i]]=set()
+		dictio[key[i]]= value[i]
+	del fil['target']
+	del fil['source']
+	for edge in g.edges():
+		for i in fil:
+			# if i =='date':
+			# 	fil[i].add(dictio[i][edge][i].split('-')[0])
+			# else:
+			fil[i].add(dictio[i][edge][i])
+
 	for i in fil:
 		fil[i]=list(fil[i])
 	for i in fil:
@@ -216,9 +258,9 @@ def output_filter_v():
 		new[i]={}
 		for j in final[i]:
 			new[i][j]=[]
-	final['fil']=new
-	print(final)
 
+
+	final['fil']=new
 	return(final)
 
 

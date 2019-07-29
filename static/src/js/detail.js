@@ -24,7 +24,7 @@ function cleanForDetail() {
 
 function submit(){
     cleanForDetail();
-
+    $(".fil_e").attr("style","display:block;")
     $(".fil_v").attr("style","display:block;")
 
 }
@@ -34,6 +34,7 @@ $(document).on('click', '.back', function(){
     $(".alert" + currentID).remove()
     $("#detailsvg"+currentID).remove()
     $(".fil_v").attr("style","display:none;")
+    $(".fil_e").attr("style","display:none;")
     $("#" + currentID).children().attr("style","display:block;")
     .attr("height",437);
     // $('.multi-link').removeClass('active show');

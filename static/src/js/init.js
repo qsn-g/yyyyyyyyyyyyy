@@ -28,12 +28,23 @@ var calculatedData = {};
 var record={};
 var fil_v;
 var fil_user_o={}
+var fil_e;
+var fil_user_e={}
+var fil_status={}
 $.get('/init',function(data,status){
-  for(var j in data['con']){
-    data['con'][j]=data['con'][j].map(Number)
+console.log(data)
+  for(let j in data['v']['con']){
+    data['v']['con'][j]=data['v']['con'][j].map(Number)
   }
-  fil_v={'con':data['con'],'cat':data['cat']}
-  fil_user_o = data['fil']
+  fil_v={'con':data['v']['con'],'cat':data['v']['cat']}
+  fil_user_o = data['v']['fil']
+
+  for(let j in data['e']['con']){
+    data['e']['con'][j]=data['e']['con'][j].map(Number)
+  }
+  fil_e={'con':data['e']['con'],'cat':data['e']['cat']}
+  fil_user_e = data['e']['fil']
+
 
   initfilter();
 

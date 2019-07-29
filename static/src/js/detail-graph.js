@@ -29,7 +29,7 @@ function drawDetail() {
 
       $.post('/detail',JSON.stringify(input),function(data,status){
         calculatedData = data;
-        console.log(calculatedData)
+
         var node_data = calculatedData['nodes']
         node_data.forEach(function(d){
           d.cx = parseFloat(d.cx)
@@ -52,7 +52,7 @@ function drawDetail() {
 
           d.target = node_data[d.target]
         })
-
+        console.log(data)
         //create somewhere to put the force directed graph
         var svg = d3.select("#" + currentID).append("svg")
             .attr("class", "svg")
@@ -116,7 +116,7 @@ function drawDetail() {
                 //   }
                 //   return att
                 // })
-                .attr("r", 7)
+                .attr("r", 2)
                 .attr('fill','red')
                 .attr('cx',function(d){return d.cx})
                 .attr('cy',function(d){return d.cy})

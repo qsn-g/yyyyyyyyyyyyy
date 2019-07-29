@@ -61,7 +61,7 @@ function addItem(key, html) {
     selData[currentID]['count']++;
     if(!(key in selData[currentID]["items"])) {
         selData[currentID]["items"][key] = infoDict[key];
-        console.log(infoDict)
+
         if(selData[currentID]['close'] == true) {
             $("#sel" + currentID).position({
                 my: "left top",
