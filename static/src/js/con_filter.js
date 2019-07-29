@@ -133,46 +133,29 @@ gRange_e[j].call(slider_e[j]);
 }
 
 function getfil_e(){
-
-    let fil_user= $.extend(true,{}, fil_user_e);
-    $(".fil_e input[type='checkbox']").each(function() {
-          if ($(this).is(":checked")){
-           fil_user['cat'][$(this).attr('name')].push($(this).val())
-                        }
-    })
-    $(".con_each_e").each(function(){
-        fil_user['con'][$(this).attr("id").replace("value-range","")]=($(this).text().split("-")).map(Number)
-    })
-      var node=d3.select("#detailsvg"+currentID).selectAll("circle")
-      var link=d3.select("#detailsvg"+currentID).selectAll("line")
-  // node.each(function(d){
-  //   var judge=1;
-  //   for( var i in fil_user['cat']){
-  //
-  //       if(fil_user['cat'][i].indexOf(d[i])<0){
-  //           judge=judge*0
-  //       }
-  //   }
-  //   for (var j in fil_user['con']){
-  //     if(d[j]<fil_user['con'][j][0] || d[j]>fil_user['con'][j][1]){
-  //       judge=judge*0
-  //                   }
-  //           }
-  //
-  //     if(judge){
-  //       $(this).attr("class","fil_select");
-  //     }else{$(this).attr("class","none");}
-  // })
+  let fil_user ={}
+  check_all(fil_user);
+  let link=d3.select("#detailsvg"+currentID).selectAll("line")
   link.each(function(d){
     var judge =1;
 
-    for (var i in fil_user['cat']){
-      if(fil_user['cat'][i].indexOf(d['target'][i])<0 ||fil_user['cat'][i].indexOf(d['source'][i])<0){
+    for (let i in fil_user['e']['cat']){
+      if(fil_user['e']['cat'][i].indexOf(d['target'][i])<0 ||fil_user['e']['cat'][i].indexOf(d['source'][i])<0){
         judge=judge*0
       }
     }
-    for (var j in fil_user['con']){
-      if(d[j]<fil_user['con'][j][0]||d[j]>fil_user['con'][j][1]){
+    for (let i in fil_user['v']['cat']){
+      if(fil_user['v']['cat'][i].indexOf(d['target'][i])<0 ||fil_user['v']['cat'][i].indexOf(d['source'][i])<0){
+        judge=judge*0
+      }
+    }
+    for (let j in fil_user['e']['con']){
+      if(d[j]<fil_user['e']['con'][j][0]||d[j]>fil_user['e']['con'][j][1]){
+        judge=judge*0
+      }
+    }
+    for (let j in fil_user['v']['con']){
+      if(d['target'][j]<fil_user['v']['con'][j][0]||d['target'][j]>fil_user['v']['con'][j][1]||d['source'][j]<fil_user['v']['con'][j][0]||d['source'][j]>fil_user['v']['con'][j][1]){
         judge=judge*0
       }
     }
@@ -190,51 +173,50 @@ function getfil_e(){
 
 
 function getfil_fil(){
+  let fil_user ={}
+  check_all(fil_user);
 
-  let fil_user= $.extend(true,{}, fil_user_o);
-  $("input[type='checkbox']").each(function() {
-        if ($(this).is(":checked")){
-         fil_user['cat'][$(this).attr('name')].push($(this).val())
-                      }
-  })
-  $(".con_each_v").each(function(){
-      fil_user['con'][$(this).attr("id").replace("value-range","")]=($(this).text().split("-")).map(Number)
-  })
-    var node=d3.select("#detailsvg"+currentID).selectAll("circle")
-    var link=d3.select("#detailsvg"+currentID).selectAll("line")
+  let node=d3.select("#detailsvg"+currentID).selectAll("circle")
+  let link=d3.select("#detailsvg"+currentID).selectAll("line")
 node.each(function(d){
   let judge=1;
-  for( var i in fil_user['cat']){
-
-      if(fil_user['cat'][i].indexOf(d[i])<0){
+  for( let i in fil_user['v']['cat']){
+      if(fil_user['v']['cat'][i].indexOf(d[i])<0){
           judge=judge*0
       }
   }
-  for (var j in fil_user['con']){
-    if(d[j]<fil_user['con'][j][0] || d[j]>fil_user['con'][j][1]){
+  for (let j in fil_user['v']['con']){
+    if(d[j]<fil_user['v']['con'][j][0] || d[j]>fil_user['v']['con'][j][1]){
       judge=judge*0
                   }
           }
-
     if(judge){
       $(this).attr("class","fil_select");
     }else{$(this).attr("class","none");}
 })
 link.each(function(d){
   let judge =1;
-
-  for (var i in fil_user['cat']){
-    if(fil_user['cat'][i].indexOf(d['target'][i])<0 ||fil_user['cat'][i].indexOf(d['source'][i])<0){
+  for (let i in fil_user['v']['cat']){
+    if(fil_user['v']['cat'][i].indexOf(d['target'][i])<0 ||fil_user['v']['cat'][i].indexOf(d['source'][i])<0){
       judge=judge*0
     }
   }
-  for (var j in fil_user['con']){
-
-    if(d['target'][j]<fil_user['con'][j][0]||d['target'][j]>fil_user['con'][j][1]||d['source'][j]<fil_user['con'][j][0]||d['source'][j]>fil_user['con'][j][1]){
-
+  for (let j in fil_user['v']['con']){
+    if(d['target'][j]<fil_user['v']['con'][j][0]||d['target'][j]>fil_user['v']['con'][j][1]||d['source'][j]<fil_user['v']['con'][j][0]||d['source'][j]>fil_user['v']['con'][j][1]){
       judge=judge*0
     }
   }
+  for (let j in fil_user['e']['con']){
+    if(d[j]<fil_user['e']['con'][j][0]||d[j]>fil_user['e']['con'][j][1]){
+      judge=judge*0
+    }
+  }
+  for (let i in fil_user['e']['cat']){
+    if(fil_user['e']['cat'][i].indexOf(d['target'][i])<0 ||fil_user['e']['cat'][i].indexOf(d['source'][i])<0){
+      judge=judge*0
+    }
+  }
+
   if(judge){
     $(this).attr("class","fil_select");
   }else{$(this).attr("class","none");}
@@ -248,9 +230,27 @@ d3.select("#detailsvg"+currentID).selectAll(".fil_select").style("opacity", 0.7)
 
 
 
-function check_all(){
+function check_all(fil_user){
 
+fil_user['e']=$.extend(true,{}, fil_user_e);
+fil_user['v']=$.extend(true,{}, fil_user_o)
+$(".fil_e input[type='checkbox']").each(function() {
+      if ($(this).is(":checked")){
+       fil_user['e']['cat'][$(this).attr('name')].push($(this).val())
+                    }
+})
+$(".con_each_e").each(function(){
+    fil_user['e']['con'][$(this).attr("id").replace("value-range","")]=($(this).text().split("-")).map(Number)
+})
 
+$(".fil_v input[type='checkbox']").each(function() {
+      if ($(this).is(":checked")){
+       fil_user['v']['cat'][$(this).attr('name')].push($(this).val())
+                    }
+})
+$(".con_each_v").each(function(){
+    fil_user['v']['con'][$(this).attr("id").replace("value-range","")]=($(this).text().split("-")).map(Number)
+})
 
 }
 

@@ -32,7 +32,6 @@ var fil_e;
 var fil_user_e={}
 var fil_status={}
 $.get('/init',function(data,status){
-console.log(data)
   for(let j in data['v']['con']){
     data['v']['con'][j]=data['v']['con'][j].map(Number)
   }
