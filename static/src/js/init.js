@@ -1,11 +1,9 @@
 var color = d3.scaleOrdinal().range(["#b52b2b", "#63a375","#87bcde","#d57a66"])
-var composeCount = 1;
+var composeCount = 0;
 var currentID = 'tab1';
 var width, height;
 var empty;
 var fb_overview_data;
-var forceDict = {};
-var forceDictDetail = {};
 // var instDict = {};
 var change_data;
 var controlWidth = 320;
@@ -13,16 +11,13 @@ var historyWidth = 150;
 var svgWidth, svgHeight;
 
 var hisBut = 1, controlBut = 1;
-var instData = [];
 var selData = [];
 
 var infoDict = {};
-
-var parent = {};
 var detailData = {};
 
 var calculatedData;
-var prelink = {}, prenode = {};
+
 var record={};
 var fil_v;
 var fil_user_o={}
@@ -31,30 +26,27 @@ var fil_user_e={}
 var track_status= {}
 track_status[currentID]={'tabItem1':{'checkbox':new Array(),'slider':new Array()},'tabItem2':{'checkbox': new Array(),'slider':new Array()}};
 
-$.get('/init',function(data,status){
-  for(let j in data['v']['con']){
-    data['v']['con'][j]=data['v']['con'][j].map(Number)
-  }
-  fil_v={'con':data['v']['con'],'cat':data['v']['cat']}
-  fil_user_o = data['v']['fil']
 
-  for(let j in data['e']['con']){
-    data['e']['con'][j]=data['e']['con'][j].map(Number)
-  }
-  fil_e={'con':data['e']['con'],'cat':data['e']['cat']}
-  fil_user_e = data['e']['fil']
-  initfilter();
-})
-// d3.json("static/src/data/prenode.json", function(data){
-//     prenode = data;
-// })
-//
-// d3.json("static/src/data/prelink.json", function(data){
-//     prelink = data
-// })
-$.get('/infor_fb',function(data,status){
-  infoDict = data;
-})
+function get_data(){
+  // $.get('/init_'+change_data+'',function(data,status){
+  //   for(let j in data['v']['con']){
+  //     data['v']['con'][j]=data['v']['con'][j].map(Number)
+  //   }
+  //   fil_v={'con':data['v']['con'],'cat':data['v']['cat']}
+  //   fil_user_o = data['v']['fil']
+  //
+  //   for(let j in data['e']['con']){
+  //     data['e']['con'][j]=data['e']['con'][j].map(Number)
+  //   }
+  //   fil_e={'con':data['e']['con'],'cat':data['e']['cat']}
+  //   fil_user_e = data['e']['fil']
+  //   initfilter();
+  // })
+  $.get('/infor_'+change_data+'',function(data,status){
+    infoDict = data;
+  })
+}
+
 // $.getJSON( "static/src/data/ins.json", function( data ) {
 //     jQuery.extend(true, instData, data);
 // })
@@ -117,7 +109,6 @@ function reimplement(){
     var w_op=elem.type
     console.log('.'+t)
     $("#overnoderegion3").click()
-    // t['on'+elem.type]=true
   })
 
 }

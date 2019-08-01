@@ -4,10 +4,14 @@ $('#Dataselect').change(function(){
   if ($("#Dataselect").val()==1){
     $('.close').click();
     change_data="fb";
+    get_data();
     $('#new-tab').click();
-
 }
-  // $.get("/", function(data, status){
-  //
-  // });
+  if ($("#Dataselect").val()==2){
+    $('.close').click();
+    change_data="bully";
+    get_data();
+    $('#new-tab').click();
+  }
+
 });

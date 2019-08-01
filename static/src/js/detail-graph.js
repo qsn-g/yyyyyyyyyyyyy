@@ -21,13 +21,13 @@ function drawDetail() {
     		return "red";
     	}
     }
-
     var input = {}
     for(var each in selData[currentID]['items']){
-        input[each]=(selData[currentID]['items'][each]['pass']);
+        // input[each]=(selData[currentID]['items'][each]['pass']);
+        input[each]=[];
     }
 
-      $.post('/detail',JSON.stringify(input),function(data,status){
+      $.post('/detail_'+change_data+'',JSON.stringify(input),function(data,status){
         calculatedData = data;
 
         var node_data = calculatedData['nodes']
@@ -52,7 +52,6 @@ function drawDetail() {
 
           d.target = node_data[d.target]
         })
-        console.log(data)
         //create somewhere to put the force directed graph
         var svg = d3.select("#" + currentID).append("svg")
             .attr("class", "svg")
@@ -132,7 +131,6 @@ function drawDetail() {
 
         // checkboxOnClick(node,link);
 
-        // $("input[type=checkbox]").click();
         function dragged(d) {
           d.x = d3.event.x, d.y = d3.event.y;
           d3.select(this).attr("cx", d.x).attr("cy", d.y);

@@ -7309,7 +7309,7 @@ var author$project$Main$control = function (model) {
 									rundis$elm_bootstrap$Bootstrap$Form$Select$item,
 									_List_fromArray(
 										[
-											elm$html$Html$Attributes$value('')
+											elm$html$Html$Attributes$value('0')
 										]),
 									_List_fromArray(
 										[

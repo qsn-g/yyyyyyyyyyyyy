@@ -1,44 +1,43 @@
 $("#controlBut").click(function() {
     event.preventDefault();
-    var dict;
-
-    if(currentID in parent) {
-        dict = forceDictDetail;
-    } else {
-        dict = forceDict;
-    }
+    // var dict;
+    // if(currentID in parent) {
+    //     dict = forceDictDetail;
+    // } else {
+    //     dict = forceDict;
+    // }
     controlBut = 1 - controlBut;
     width = svgWidth[controlBut]
     if(controlBut == 1) {
         $('#svg'+currentID).width(width)
-        dict[currentID].force("center", d3.forceCenter(width / 2, height / 2))
-        dict[currentID].alpha(1).restart();
+        // dict[currentID].force("center", d3.forceCenter(width / 2, height / 2))
+        // dict[currentID].alpha(1).restart();
     } else {
         setTimeout(function(){
             $('#svg'+currentID).width(width)
-            dict[currentID].force("center", d3.forceCenter(width / 2, height / 2))
-            dict[currentID].alpha(1).restart();
+            // dict[currentID].force("center", d3.forceCenter(width / 2, height / 2))
+            // dict[currentID].alpha(1).restart();
         },300);
     }
 })
 $("#hisBut").click(function() {
-    var dict;
-    if(currentID in parent) {
-        dict = forceDictDetail;
-    } else {
-        dict = forceDict;
-    }
+    // var dict;
+    // if(currentID in parent) {
+    //     dict = forceDictDetail;
+    // } else {
+    //     dict = forceDict;
+    // }
     hisBut = 1 - hisBut;
     height = svgHeight[hisBut]
     if(hisBut == 1) {
         $('#svg'+currentID).height(height)
-        dict[currentID].force("center", d3.forceCenter(width / 2, height / 2))
-        dict[currentID].alpha(1).restart();
+        // dict[currentID].force("center", d3.forceCenter(width / 2, height / 2))
+        // dict[currentID].alpha(1).restart();
     } else {
         setTimeout(function(){
             $('#svg'+currentID).height(height)
-            dict[currentID].force("center", d3.forceCenter(width / 2, height / 2))
-            dict[currentID].alpha(1).restart();
+            // dict[currentID].force("center", d3.forceCenter(width / 2, height / 2))
+            // dict[currentID].alpha(1).restart();
         },300);
     }
 })
@@ -50,7 +49,7 @@ function drawOverview() {
        .force("link", d3.forceLink().id(function(d) { return d.ind }))
        .force("center", d3.forceCenter(width / 2, height / 2));
 
-    forceDict[currentID] = force;
+    // forceDict[currentID] = force;
 
     var svg = d3.select("#" + currentID).append("svg")
         .attr("class", "svg")
@@ -60,7 +59,7 @@ function drawOverview() {
         .append("g")
 
 
-    $.get("/overview_fb",function(data,status){
+    $.get("/overview_"+change_data+"",function(data,status){
         overview_data=data;
         force
             .nodes(overview_data.nodes)
@@ -179,7 +178,13 @@ drawSelected();
 }
 function drawOnetab() {
     // drawall();
-    drawOverview();
+    if ($("#Dataselect").val()=='0'){
+      console.log("1")
+    }else{
+      drawOverview();
+    }
+
+
     // drawInstruction();
 
 }

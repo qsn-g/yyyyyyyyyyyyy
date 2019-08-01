@@ -2,13 +2,16 @@ from flask import Flask, request, render_template, jsonify
 import random as r
 import math as m
 import json
+from Bully_data import *
 from fb_data import *
 import graph_tool.all as gt
 import matplotlib.pylab as matplotlib
 import csv
 app = Flask(__name__, static_url_path='/static')
-g =my_form_post()
-hir=pre_dic()
+g_b =my_Bully_post()
+g_f =my_form_post()
+hir_f=pre_dic()
+hir_b=pre_dic_b()
 
 @app.route('/')
 def my_form():
@@ -39,19 +42,26 @@ def my_view():
 		jsondata = json.load(load_f)
 	return jsondata
 
-@app.route('/init', methods=["GET"])
+@app.route('/init_fb', methods=["GET"])
 def fildata():
     fil={}
     fil['v']=output_filter_v()
     fil['e']=output_filter_e()
     return fil
 
-@app.route('/detail', methods=['POST'])
+@app.route('/detail_fb', methods=['POST'])
 def select_data():
     data=request.get_data()
     temp = json.loads(data)
-    u = need_data(temp,g,hir)
+    u = need_data(temp,g_f,hir_f)
     return (output_json(u))
+
+@app.route('/detail_bully', methods=['POST'])
+def select_data_bu():
+    data=request.get_data()
+    temp = json.loads(data)
+    u = need_data_b(temp,g_b,hir_b)
+    return (output_json_b(u))
 
 # @app.route('/Select_Local', methods=['GET'])
 # def Local():

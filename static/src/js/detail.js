@@ -9,6 +9,7 @@ function cleanForDetail() {
     // newTab();
     // parent[currentID] = oldID;
     detailData[currentID] = {};
+
     // Object.assign(detailData[currentID], selData[oldID]["items"])
     Object.assign(detailData[currentID], selData[currentID]["items"])
     $('#' + currentID)

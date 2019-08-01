@@ -300,7 +300,7 @@ control model =
             [ Navbar.formItem []
                 [ label [ style "color" "gray",style "margin-right" "7px"] [ text "Data" ]
                   ,Select.custom [Select.small, Select.id "Dataselect",Select.attrs[style "margin-right" "570px", style "height" "25px",style "width" "100px",style "font-size" "9px"]]
-                                [ Select.item [value ""] [ text "Select"]
+                                [ Select.item [value "0"] [ text "Select"]
                                 , Select.item [value "1"] [ text "FB-Data"]
                                 , Select.item [value "2"] [ text "Bully-Data"]
                                 ]

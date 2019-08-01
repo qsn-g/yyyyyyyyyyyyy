@@ -14,23 +14,26 @@ function newTab() {
     $('#multi-tabs-content').append('<div class="tab-pane multi-pane active show" id="' + currentID + '">  </div>');
 }
 
-$('#new-tab').click(function (e) {
+$('#new-tab').on("click", function (e) {
+  if($("#Dataselect").val()=="0"){
+    console.log("2")
+  }else{
     newTab();
     drawOnetab();
     $(".fil_v").attr("style","display:none;")
-
+  }
 
 })
 
 $(document).on('click', '.multi-link', function(){
     currentID = $(this)[0].id.substring(1);
 
-    if(!(currentID in parent)) {
-        $('#svg'+currentID).width(width)
-        $('#svg'+currentID).height(height)
-        forceDict[currentID].force("center", d3.forceCenter(width / 2, height / 2))
-        forceDict[currentID].alpha(1).restart();
-    }
+    // if(!(currentID in parent)) {
+    //     $('#svg'+currentID).width(width)
+    //     $('#svg'+currentID).height(height)
+    //     forceDict[currentID].force("center", d3.forceCenter(width / 2, height / 2))
+    //     forceDict[currentID].alpha(1).restart();
+    // }
 })
 
 $(document).on('click', '.close', function(){
