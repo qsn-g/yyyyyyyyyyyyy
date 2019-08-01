@@ -261,33 +261,68 @@ control model =
         |> Navbar.withAnimation
         |> Navbar.collapseLarge
         |> Navbar.brand [ href "#"] [ text "Social Network Vis"]
-        |> Navbar.items
-            [ Navbar.itemLink [href "#page1"] [ text "Data"]
-            , Navbar.itemLink [href "#page2"] [ text "View"]
-            , Navbar.itemLink [href "#page3"] [ text "Options"]
-            , Navbar.dropdown
-                { id = "mydropdown"
-                , toggle = Navbar.dropdownToggle [] [ text "Export" ]
-                , items =
-                    [ Navbar.dropdownItem
-                        [ href "#" ]
-                        [ text "Image" ]
-                    , Navbar.dropdownItem
-                        [ href "#" ]
-                        [ text "Project" ]
-                    , Navbar.dropdownItem
-                        [ href "#" ]
-                        [ text "Tab" ]
-                    ]
-                }
-            ]
+        -- |> Navbar.items
+            -- [
+            --
+            -- Navbar.dropdown
+            --                 { id = "Local_data"
+            --                 , toggle = Navbar.dropdownToggle [] [ text "Data" ]
+            --                 , items =
+            --                     [ Navbar.dropdownItem
+            --                         [ id "fb" ]
+            --                         [ text "FB-Data" ]
+            --                     , Navbar.dropdownItem
+            --                         [ id "bully" ]
+            --                         [ text "Bully-Data" ]
+            --                     ]
+            --                 }
+        --     , Navbar.itemLink [href "#page2"] [ text "View"]
+        --     , Navbar.itemLink [href "#page3"] [ text "Options"]
+        --     , Navbar.dropdown
+        --         { id = "mydropdown"
+        --         , toggle = Navbar.dropdownToggle [] [ text "Export" ]
+        --         , items =
+        --             [ Navbar.dropdownItem
+        --                 [ href "#" ]
+        --                 [ text "Image" ]
+        --             , Navbar.dropdownItem
+        --                 [ href "#" ]
+        --                 [ text "Project" ]
+        --             , Navbar.dropdownItem
+        --                 [ href "#" ]
+        --                 [ text "Tab" ]
+        --             ]
+        --         }
+            -- ]
+
+
         |> Navbar.customItems
             [ Navbar.formItem []
-                [ Button.button
+                [ label [ style "color" "gray",style "margin-right" "7px"] [ text "Data" ]
+                  ,Select.custom [Select.small, Select.id "Dataselect",Select.attrs[style "margin-right" "570px", style "height" "25px",style "width" "100px",style "font-size" "9px"]]
+                                [ Select.item [value ""] [ text "Select"]
+                                , Select.item [value "1"] [ text "FB-Data"]
+                                , Select.item [value "2"] [ text "Bully-Data"]
+                                ]
+
+                  -- Form.form [id "L_data",style "margin-right" "520px"]
+                  -- [
+                  --    Form.group []
+                  --           [ Form.label [style "color" "gray",style "margin-right" "7px", for "myselect" ] [ text "Data" ]
+                  --           , Select.custom [Select.small, Select.id "Dataselect",Select.attrs[style "margin-right" "7px", style "height" "25px",style "width" "100px",style "font-size" "9px"]]
+                  --               [ Select.item [value ""] [ text "Select"]
+                  --               , Select.item [value "1"] [ text "FB-Data"]
+                  --               , Select.item [value "2"] [ text "Bully-Data"]
+                  --               ]
+                  --           , Button.button [ Button.small,Button.secondary, Button.attrs[name "btn_data",id "sel_bu_data",style "height" "25px", style "font-size" "10px"]] [ text "Apply" ]
+                  --           ]
+                  -- ]
+                  ,Button.button
                     [ Button.secondary, Button.attrs[onClick Control, id "controlBut"]]
                     [ text model.controlPanel.button ]
                 ]
             ]
+
         |> Navbar.view model.navState
 
 mainContent : Model -> Html Msg

@@ -14,15 +14,6 @@ function drawSelected() {
     $("#sel" + currentID).draggable({containment: "parent"});
     $("#selbut" + currentID).draggable({containment: "parent", axis: 'x', cancel:false});
 
-    // $("#sel" + currentID).resizable();
-
-    // $("#sel" + currentID).position({
-    //     my: "right top",
-    //     at: "right-80 top-90",
-    //     of: "#" + currentID,
-    //     within: "#" + currentID
-    // });
-
     $("#selbut" + currentID).position({
         my: "left top",
         at: "left top",
@@ -35,18 +26,18 @@ function drawSelected() {
 
 function setbackNodes() {
     d3.selectAll(".node" + currentID)
-    .attr("r", 10)
+    .attr("r", 7)
     .style("opacity", 1);
 }
 
 function updateNodes() {
     d3.selectAll(".node" + currentID)
-    .attr("r", 10)
+    .attr("r", 7)
     .style('stroke', "none")
     .style("opacity", 0.5);
     for(var key in selData[currentID]["items"]){
         d3.selectAll("." + currentID + "-" + key)
-        .attr("r", 10)
+        .attr("r", 7)
         .style('stroke', "none")
         .style("opacity", 1);
     }

@@ -6,8 +6,8 @@ var empty;
 var fb_overview_data;
 var forceDict = {};
 var forceDictDetail = {};
-var instDict = {};
-
+// var instDict = {};
+var change_data;
 var controlWidth = 320;
 var historyWidth = 150;
 var svgWidth, svgHeight;
@@ -21,16 +21,16 @@ var infoDict = {};
 var parent = {};
 var detailData = {};
 
+var calculatedData;
 var prelink = {}, prenode = {};
-
-var calculatedData = {};
-
 var record={};
 var fil_v;
 var fil_user_o={}
 var fil_e;
 var fil_user_e={}
-var fil_status={}
+var track_status= {}
+track_status[currentID]={'tabItem1':{'checkbox':new Array(),'slider':new Array()},'tabItem2':{'checkbox': new Array(),'slider':new Array()}};
+
 $.get('/init',function(data,status){
   for(let j in data['v']['con']){
     data['v']['con'][j]=data['v']['con'][j].map(Number)
@@ -43,30 +43,23 @@ $.get('/init',function(data,status){
   }
   fil_e={'con':data['e']['con'],'cat':data['e']['cat']}
   fil_user_e = data['e']['fil']
-
-
   initfilter();
-
 })
-
-d3.json("static/src/data/prenode.json", function(data){
-    prenode = data;
+// d3.json("static/src/data/prenode.json", function(data){
+//     prenode = data;
+// })
+//
+// d3.json("static/src/data/prelink.json", function(data){
+//     prelink = data
+// })
+$.get('/infor_fb',function(data,status){
+  infoDict = data;
 })
-
-d3.json("static/src/data/prelink.json", function(data){
-    prelink = data
-})
-
-d3.json("static/src/data/infor.json", function(data){
-    infoDict = data;
-})
-
-$.getJSON( "static/src/data/ins.json", function( data ) {
-    jQuery.extend(true, instData, data);
-})
+// $.getJSON( "static/src/data/ins.json", function( data ) {
+//     jQuery.extend(true, instData, data);
+// })
 
 $('#content-his').append(
-
     '<ul class="nav nav-tabs" id="multi-tabs">'+
         '<li class="nav-item multi-item" id="litab1">'+
             '<a class="nav-link multi-link active" data-toggle="tab" id="atab1" href="#tab1">'+
@@ -77,7 +70,6 @@ $('#content-his').append(
     '</ul>'+
     '<div class="tab-content" id="multi-tabs-content">'+
         '<div class="tab-pane multi-pane active" id="tab1">'+
-            // '<p> Tab 1 </p>'+
         '</div>'+
     '</div>'
 )
@@ -112,7 +104,7 @@ function recordevent(e,currentID){
   }
   record[currentID].push(s_ope
   )
-  console.log(record)
+
 }
 
 

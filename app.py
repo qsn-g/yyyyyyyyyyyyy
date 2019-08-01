@@ -15,7 +15,25 @@ def my_form():
     # jsondata = json.loads("static/src/data/FB_overview.json")
     return render_template('index.html')
 
-@app.route('/overview',methods=["GET"])
+@app.route('/overview_bully',methods=["GET"])
+def my_view_bu():
+	with open("static/src/data/overview_bully.json",'r') as load_f:
+		jsondata = json.load(load_f)
+	return jsondata
+
+@app.route('/infor_fb',methods=['GET'])
+def infor_fb():
+	with open("static/src/data/infor.json",'r') as load_f:
+		jsondata = json.load(load_f)
+	return jsondata
+
+@app.route('/infor_bully',methods=['GET'])
+def infor_b():
+	with open("static/src/data/infor_bully.json",'r') as load_f:
+		jsondata = json.load(load_f)
+	return jsondata
+
+@app.route('/overview_fb',methods=["GET"])
 def my_view():
 	with open("static/src/data/overview.json",'r') as load_f:
 		jsondata = json.load(load_f)
@@ -35,6 +53,9 @@ def select_data():
     u = need_data(temp,g,hir)
     return (output_json(u))
 
+# @app.route('/Select_Local', methods=['GET'])
+# def Local():
+#     return
 
 if __name__ == '__main__':
     app.run()

@@ -1,6 +1,7 @@
 var id = [['tabItem1','Node Filter','fil_v'],['tabItem2','Edge Filter']]
 
 function initfilter(){
+
   $('#tabItem1').children().last().append("<div class ='fil_v' id ='fil_vtabItem1'>"+
   '<h5 style="font-size:1rem;">Node Filter</h5>'+
   '<div style="padding-left:10px;" class="cat_v_all" id = "cat_v_alltabItem1" width="100%">'+
@@ -104,6 +105,7 @@ slider_e[j]=d3
   d3.select('p#value-range'+j).text(val.map(d3.format('d')).join('-'));
   getfil_e();
   });
+
   // var gRange = d3
   gRange_e[j]=d3
   .select('div#slider'+j)
@@ -231,29 +233,57 @@ d3.select("#detailsvg"+currentID).selectAll(".fil_select").style("opacity", 0.7)
 
 
 function check_all(fil_user){
-
 fil_user['e']=$.extend(true,{}, fil_user_e);
 fil_user['v']=$.extend(true,{}, fil_user_o)
+track_status[currentID]['tabItem1']['checkbox']=new Array()
+track_status[currentID]['tabItem1']['slider']=new Array()
+track_status[currentID]['tabItem2']['checkbox']=new Array()
+track_status[currentID]['tabItem2']['slider']=new Array()
+
 $(".fil_e input[type='checkbox']").each(function() {
       if ($(this).is(":checked")){
        fil_user['e']['cat'][$(this).attr('name')].push($(this).val())
-                    }
+
+     }else{track_status[currentID]['tabItem2']['checkbox'].push($(this).attr('id'))}
 })
 $(".con_each_e").each(function(){
-    fil_user['e']['con'][$(this).attr("id").replace("value-range","")]=($(this).text().split("-")).map(Number)
+    let temp=($(this).text().split("-")).map(Number)
+    fil_user['e']['con'][$(this).attr("id").replace("value-range","")]=temp
+    track_status[currentID]['tabItem2']['slider'].push(temp)
 })
 
 $(".fil_v input[type='checkbox']").each(function() {
       if ($(this).is(":checked")){
        fil_user['v']['cat'][$(this).attr('name')].push($(this).val())
-                    }
+     }else{track_status[currentID]['tabItem1']['checkbox'].push($(this).attr('id'));}
 })
 $(".con_each_v").each(function(){
+    let temp=($(this).text().split("-")).map(Number)
     fil_user['v']['con'][$(this).attr("id").replace("value-range","")]=($(this).text().split("-")).map(Number)
+    track_status[currentID]['tabItem1']['slider'].push(temp)
 })
 
 }
 
+
+function reshowfil_box(){
+  $("input[type=checkbox]").prop("checked",true)
+
+  let e_ck=track_status[currentID]['tabItem2']['checkbox']
+  let v_ck=track_status[currentID]['tabItem1']['checkbox']
+  $(".fil_e input[type='checkbox']").each(function(){
+    if(e_ck.indexOf($(this).attr('id'))){
+      $(this).click()
+    }
+  })
+  $(".fil_v input[type='checkbox']").each(function(){
+    if(v_ck.indexOf($(this).attr('id'))){
+      $(this).click()
+    }
+  })
+
+
+}
 
 
 // window.onload = function() {

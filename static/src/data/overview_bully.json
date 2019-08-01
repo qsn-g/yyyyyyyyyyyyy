@@ -1,0 +1,1816 @@
+{
+    "nodes": [
+        {
+            "name": "Bully",
+            "ind": 0,
+            "value": 0,
+            "level": 0
+        },
+        {
+            "name": "schoolnet_3.0",
+            "show_name": "schoolnet_3.0",
+            "ind": 52053,
+            "level": 1,
+            "value": 286
+        },
+        {
+            "name": "schoolnet_3.0year_c1",
+            "show_name": "year_c1",
+            "ind": 11776,
+            "level": 2,
+            "value": 85
+        },
+        {
+            "name": "schoolnet_606.0",
+            "show_name": "schoolnet_606.0",
+            "ind": 12421,
+            "level": 1,
+            "value": 313
+        },
+        {
+            "name": "schoolnet_606.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12422,
+            "level": 2,
+            "value": 313
+        },
+        {
+            "name": "schoolnet_5.0",
+            "show_name": "schoolnet_5.0",
+            "ind": 54083,
+            "level": 1,
+            "value": 429
+        },
+        {
+            "name": "schoolnet_5.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12370,
+            "level": 2,
+            "value": 145
+        },
+        {
+            "name": "schoolnet_602.0",
+            "show_name": "schoolnet_602.0",
+            "ind": 12243,
+            "level": 1,
+            "value": 97
+        },
+        {
+            "name": "schoolnet_602.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12244,
+            "level": 2,
+            "value": 97
+        },
+        {
+            "name": "schoolnet_710.0",
+            "show_name": "schoolnet_710.0",
+            "ind": 38671,
+            "level": 1,
+            "value": 799
+        },
+        {
+            "name": "schoolnet_710.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12416,
+            "level": 2,
+            "value": 240
+        },
+        {
+            "name": "schoolnet_809.0",
+            "show_name": "schoolnet_809.0",
+            "ind": 64735,
+            "level": 1,
+            "value": 1211
+        },
+        {
+            "name": "schoolnet_809.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12322,
+            "level": 2,
+            "value": 226
+        },
+        {
+            "name": "schoolnet_709.0",
+            "show_name": "schoolnet_709.0",
+            "ind": 38775,
+            "level": 1,
+            "value": 767
+        },
+        {
+            "name": "schoolnet_709.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12396,
+            "level": 2,
+            "value": 255
+        },
+        {
+            "name": "schoolnet_810.0",
+            "show_name": "schoolnet_810.0",
+            "ind": 64617,
+            "level": 1,
+            "value": 1269
+        },
+        {
+            "name": "schoolnet_810.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12404,
+            "level": 2,
+            "value": 241
+        },
+        {
+            "name": "schoolnet_11.0",
+            "show_name": "schoolnet_11.0",
+            "ind": 64873,
+            "level": 1,
+            "value": 130
+        },
+        {
+            "name": "schoolnet_11.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12178,
+            "level": 2,
+            "value": 24
+        },
+        {
+            "name": "schoolnet_609.0",
+            "show_name": "schoolnet_609.0",
+            "ind": 12413,
+            "level": 1,
+            "value": 233
+        },
+        {
+            "name": "schoolnet_609.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12414,
+            "level": 2,
+            "value": 233
+        },
+        {
+            "name": "schoolnet_808.0",
+            "show_name": "schoolnet_808.0",
+            "ind": 64885,
+            "level": 1,
+            "value": 1538
+        },
+        {
+            "name": "schoolnet_808.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12412,
+            "level": 2,
+            "value": 262
+        },
+        {
+            "name": "schoolnet_807.0",
+            "show_name": "schoolnet_807.0",
+            "ind": 64831,
+            "level": 1,
+            "value": 1610
+        },
+        {
+            "name": "schoolnet_807.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12408,
+            "level": 2,
+            "value": 296
+        },
+        {
+            "name": "schoolnet_607.0",
+            "show_name": "schoolnet_607.0",
+            "ind": 12423,
+            "level": 1,
+            "value": 346
+        },
+        {
+            "name": "schoolnet_607.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12424,
+            "level": 2,
+            "value": 346
+        },
+        {
+            "name": "schoolnet_12.0",
+            "show_name": "schoolnet_12.0",
+            "ind": 77501,
+            "level": 1,
+            "value": 606
+        },
+        {
+            "name": "schoolnet_12.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12366,
+            "level": 2,
+            "value": 39
+        },
+        {
+            "name": "schoolnet_708.0",
+            "show_name": "schoolnet_708.0",
+            "ind": 38767,
+            "level": 1,
+            "value": 1055
+        },
+        {
+            "name": "schoolnet_708.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12400,
+            "level": 2,
+            "value": 318
+        },
+        {
+            "name": "schoolnet_601.0",
+            "show_name": "schoolnet_601.0",
+            "ind": 12345,
+            "level": 1,
+            "value": 245
+        },
+        {
+            "name": "schoolnet_601.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12346,
+            "level": 2,
+            "value": 245
+        },
+        {
+            "name": "schoolnet_604.0",
+            "show_name": "schoolnet_604.0",
+            "ind": 12425,
+            "level": 1,
+            "value": 265
+        },
+        {
+            "name": "schoolnet_604.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12426,
+            "level": 2,
+            "value": 265
+        },
+        {
+            "name": "schoolnet_701.0",
+            "show_name": "schoolnet_701.0",
+            "ind": 38739,
+            "level": 1,
+            "value": 719
+        },
+        {
+            "name": "schoolnet_701.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12430,
+            "level": 2,
+            "value": 228
+        },
+        {
+            "name": "schoolnet_706.0",
+            "show_name": "schoolnet_706.0",
+            "ind": 38785,
+            "level": 1,
+            "value": 901
+        },
+        {
+            "name": "schoolnet_706.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12330,
+            "level": 2,
+            "value": 259
+        },
+        {
+            "name": "schoolnet_704.0",
+            "show_name": "schoolnet_704.0",
+            "ind": 38701,
+            "level": 1,
+            "value": 819
+        },
+        {
+            "name": "schoolnet_704.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12420,
+            "level": 2,
+            "value": 273
+        },
+        {
+            "name": "schoolnet_608.0",
+            "show_name": "schoolnet_608.0",
+            "ind": 12401,
+            "level": 1,
+            "value": 339
+        },
+        {
+            "name": "schoolnet_608.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12402,
+            "level": 2,
+            "value": 339
+        },
+        {
+            "name": "schoolnet_707.0",
+            "show_name": "schoolnet_707.0",
+            "ind": 38727,
+            "level": 1,
+            "value": 997
+        },
+        {
+            "name": "schoolnet_707.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12392,
+            "level": 2,
+            "value": 308
+        },
+        {
+            "name": "schoolnet_610.0",
+            "show_name": "schoolnet_610.0",
+            "ind": 12367,
+            "level": 1,
+            "value": 276
+        },
+        {
+            "name": "schoolnet_610.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12368,
+            "level": 2,
+            "value": 276
+        },
+        {
+            "name": "schoolnet_806.0",
+            "show_name": "schoolnet_806.0",
+            "ind": 64891,
+            "level": 1,
+            "value": 1490
+        },
+        {
+            "name": "schoolnet_806.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12296,
+            "level": 2,
+            "value": 280
+        },
+        {
+            "name": "schoolnet_802.0",
+            "show_name": "schoolnet_802.0",
+            "ind": 53565,
+            "level": 1,
+            "value": 394
+        },
+        {
+            "name": "schoolnet_802.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12308,
+            "level": 2,
+            "value": 66
+        },
+        {
+            "name": "schoolnet_13.0",
+            "show_name": "schoolnet_13.0",
+            "ind": 64859,
+            "level": 1,
+            "value": 91
+        },
+        {
+            "name": "schoolnet_13.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12332,
+            "level": 2,
+            "value": 24
+        },
+        {
+            "name": "schoolnet_801.0",
+            "show_name": "schoolnet_801.0",
+            "ind": 64897,
+            "level": 1,
+            "value": 1201
+        },
+        {
+            "name": "schoolnet_801.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12434,
+            "level": 2,
+            "value": 210
+        },
+        {
+            "name": "schoolnet_804.0",
+            "show_name": "schoolnet_804.0",
+            "ind": 64901,
+            "level": 1,
+            "value": 1363
+        },
+        {
+            "name": "schoolnet_804.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12304,
+            "level": 2,
+            "value": 250
+        },
+        {
+            "name": "schoolnet_702.0",
+            "show_name": "schoolnet_702.0",
+            "ind": 38415,
+            "level": 1,
+            "value": 273
+        },
+        {
+            "name": "schoolnet_702.0year_c1",
+            "show_name": "year_c1",
+            "ind": 12122,
+            "level": 2,
+            "value": 74
+        },
+        {
+            "name": "schoolnet_3.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25566,
+            "level": 2,
+            "value": 64
+        },
+        {
+            "name": "schoolnet_5.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25520,
+            "level": 2,
+            "value": 91
+        },
+        {
+            "name": "schoolnet_702.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25166,
+            "level": 2,
+            "value": 100
+        },
+        {
+            "name": "schoolnet_710.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25518,
+            "level": 2,
+            "value": 279
+        },
+        {
+            "name": "schoolnet_914.0",
+            "show_name": "schoolnet_914.0",
+            "ind": 77503,
+            "level": 1,
+            "value": 5653
+        },
+        {
+            "name": "schoolnet_914.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25546,
+            "level": 2,
+            "value": 491
+        },
+        {
+            "name": "schoolnet_11.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25508,
+            "level": 2,
+            "value": 31
+        },
+        {
+            "name": "schoolnet_809.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25540,
+            "level": 2,
+            "value": 256
+        },
+        {
+            "name": "schoolnet_810.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25556,
+            "level": 2,
+            "value": 241
+        },
+        {
+            "name": "schoolnet_709.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25552,
+            "level": 2,
+            "value": 256
+        },
+        {
+            "name": "schoolnet_918.0",
+            "show_name": "schoolnet_918.0",
+            "ind": 77499,
+            "level": 1,
+            "value": 3390
+        },
+        {
+            "name": "schoolnet_918.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25554,
+            "level": 2,
+            "value": 338
+        },
+        {
+            "name": "schoolnet_12.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25516,
+            "level": 2,
+            "value": 28
+        },
+        {
+            "name": "schoolnet_919.0",
+            "show_name": "schoolnet_919.0",
+            "ind": 77487,
+            "level": 1,
+            "value": 3785
+        },
+        {
+            "name": "schoolnet_919.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25548,
+            "level": 2,
+            "value": 392
+        },
+        {
+            "name": "schoolnet_707.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25406,
+            "level": 2,
+            "value": 344
+        },
+        {
+            "name": "schoolnet_808.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25542,
+            "level": 2,
+            "value": 278
+        },
+        {
+            "name": "schoolnet_807.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25530,
+            "level": 2,
+            "value": 299
+        },
+        {
+            "name": "schoolnet_701.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25510,
+            "level": 2,
+            "value": 241
+        },
+        {
+            "name": "schoolnet_706.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25562,
+            "level": 2,
+            "value": 315
+        },
+        {
+            "name": "schoolnet_704.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25506,
+            "level": 2,
+            "value": 272
+        },
+        {
+            "name": "schoolnet_801.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25568,
+            "level": 2,
+            "value": 241
+        },
+        {
+            "name": "schoolnet_804.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25558,
+            "level": 2,
+            "value": 276
+        },
+        {
+            "name": "schoolnet_806.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25514,
+            "level": 2,
+            "value": 275
+        },
+        {
+            "name": "schoolnet_708.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25544,
+            "level": 2,
+            "value": 372
+        },
+        {
+            "name": "schoolnet_915.0",
+            "show_name": "schoolnet_915.0",
+            "ind": 64899,
+            "level": 1,
+            "value": 1885
+        },
+        {
+            "name": "schoolnet_915.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25522,
+            "level": 2,
+            "value": 320
+        },
+        {
+            "name": "schoolnet_916.0",
+            "show_name": "schoolnet_916.0",
+            "ind": 64871,
+            "level": 1,
+            "value": 933
+        },
+        {
+            "name": "schoolnet_916.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25476,
+            "level": 2,
+            "value": 172
+        },
+        {
+            "name": "schoolnet_917.0",
+            "show_name": "schoolnet_917.0",
+            "ind": 64849,
+            "level": 1,
+            "value": 3044
+        },
+        {
+            "name": "schoolnet_917.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25564,
+            "level": 2,
+            "value": 504
+        },
+        {
+            "name": "schoolnet_13.0year_c2",
+            "show_name": "year_c2",
+            "ind": 25490,
+            "level": 2,
+            "value": 19
+        },
+        {
+            "name": "schoolnet_802.0year_c2",
+            "show_name": "year_c2",
+            "ind": 24962,
+            "level": 2,
+            "value": 72
+        },
+        {
+            "name": "schoolnet_3.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38790,
+            "level": 2,
+            "value": 65
+        },
+        {
+            "name": "schoolnet_5.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38746,
+            "level": 2,
+            "value": 93
+        },
+        {
+            "name": "schoolnet_702.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38416,
+            "level": 2,
+            "value": 99
+        },
+        {
+            "name": "schoolnet_11.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38738,
+            "level": 2,
+            "value": 29
+        },
+        {
+            "name": "schoolnet_914.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38794,
+            "level": 2,
+            "value": 493
+        },
+        {
+            "name": "schoolnet_809.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38730,
+            "level": 2,
+            "value": 252
+        },
+        {
+            "name": "schoolnet_810.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38780,
+            "level": 2,
+            "value": 239
+        },
+        {
+            "name": "schoolnet_709.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38776,
+            "level": 2,
+            "value": 256
+        },
+        {
+            "name": "schoolnet_918.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38778,
+            "level": 2,
+            "value": 341
+        },
+        {
+            "name": "schoolnet_12.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38662,
+            "level": 2,
+            "value": 46
+        },
+        {
+            "name": "schoolnet_919.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38760,
+            "level": 2,
+            "value": 397
+        },
+        {
+            "name": "schoolnet_707.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38728,
+            "level": 2,
+            "value": 345
+        },
+        {
+            "name": "schoolnet_807.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38758,
+            "level": 2,
+            "value": 295
+        },
+        {
+            "name": "schoolnet_13.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38782,
+            "level": 2,
+            "value": 20
+        },
+        {
+            "name": "schoolnet_701.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38740,
+            "level": 2,
+            "value": 250
+        },
+        {
+            "name": "schoolnet_706.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38786,
+            "level": 2,
+            "value": 327
+        },
+        {
+            "name": "schoolnet_704.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38702,
+            "level": 2,
+            "value": 274
+        },
+        {
+            "name": "schoolnet_801.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38792,
+            "level": 2,
+            "value": 247
+        },
+        {
+            "name": "schoolnet_804.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38686,
+            "level": 2,
+            "value": 280
+        },
+        {
+            "name": "schoolnet_806.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38744,
+            "level": 2,
+            "value": 277
+        },
+        {
+            "name": "schoolnet_708.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38768,
+            "level": 2,
+            "value": 365
+        },
+        {
+            "name": "schoolnet_710.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38672,
+            "level": 2,
+            "value": 280
+        },
+        {
+            "name": "schoolnet_808.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38706,
+            "level": 2,
+            "value": 267
+        },
+        {
+            "name": "schoolnet_915.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38748,
+            "level": 2,
+            "value": 317
+        },
+        {
+            "name": "schoolnet_917.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38788,
+            "level": 2,
+            "value": 529
+        },
+        {
+            "name": "schoolnet_916.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38708,
+            "level": 2,
+            "value": 159
+        },
+        {
+            "name": "schoolnet_802.0year_c3",
+            "show_name": "year_c3",
+            "ind": 38228,
+            "level": 2,
+            "value": 71
+        },
+        {
+            "name": "schoolnet_3.0year_c4",
+            "show_name": "year_c4",
+            "ind": 38866,
+            "level": 2,
+            "value": 36
+        },
+        {
+            "name": "schoolnet_5.0year_c4",
+            "show_name": "year_c4",
+            "ind": 38966,
+            "level": 2,
+            "value": 50
+        },
+        {
+            "name": "schoolnet_11.0year_c4",
+            "show_name": "year_c4",
+            "ind": 39006,
+            "level": 2,
+            "value": 20
+        },
+        {
+            "name": "schoolnet_12.0year_c4",
+            "show_name": "year_c4",
+            "ind": 39236,
+            "level": 2,
+            "value": 115
+        },
+        {
+            "name": "schoolnet_13.0year_c4",
+            "show_name": "year_c4",
+            "ind": 39244,
+            "level": 2,
+            "value": 4
+        },
+        {
+            "name": "schoolnet_801.0year_c4",
+            "show_name": "year_c4",
+            "ind": 39756,
+            "level": 2,
+            "value": 256
+        },
+        {
+            "name": "schoolnet_802.0year_c4",
+            "show_name": "year_c4",
+            "ind": 39942,
+            "level": 2,
+            "value": 93
+        },
+        {
+            "name": "schoolnet_804.0year_c4",
+            "show_name": "year_c4",
+            "ind": 40500,
+            "level": 2,
+            "value": 279
+        },
+        {
+            "name": "schoolnet_806.0year_c4",
+            "show_name": "year_c4",
+            "ind": 41156,
+            "level": 2,
+            "value": 328
+        },
+        {
+            "name": "schoolnet_807.0year_c4",
+            "show_name": "year_c4",
+            "ind": 41886,
+            "level": 2,
+            "value": 365
+        },
+        {
+            "name": "schoolnet_808.0year_c4",
+            "show_name": "year_c4",
+            "ind": 42640,
+            "level": 2,
+            "value": 377
+        },
+        {
+            "name": "schoolnet_809.0year_c4",
+            "show_name": "year_c4",
+            "ind": 43122,
+            "level": 2,
+            "value": 241
+        },
+        {
+            "name": "schoolnet_810.0year_c4",
+            "show_name": "year_c4",
+            "ind": 43684,
+            "level": 2,
+            "value": 281
+        },
+        {
+            "name": "schoolnet_914.0year_c4",
+            "show_name": "year_c4",
+            "ind": 45658,
+            "level": 2,
+            "value": 987
+        },
+        {
+            "name": "schoolnet_915.0year_c4",
+            "show_name": "year_c4",
+            "ind": 46924,
+            "level": 2,
+            "value": 633
+        },
+        {
+            "name": "schoolnet_916.0year_c4",
+            "show_name": "year_c4",
+            "ind": 47526,
+            "level": 2,
+            "value": 301
+        },
+        {
+            "name": "schoolnet_917.0year_c4",
+            "show_name": "year_c4",
+            "ind": 49548,
+            "level": 2,
+            "value": 1011
+        },
+        {
+            "name": "schoolnet_918.0year_c4",
+            "show_name": "year_c4",
+            "ind": 50704,
+            "level": 2,
+            "value": 578
+        },
+        {
+            "name": "schoolnet_919.0year_c4",
+            "show_name": "year_c4",
+            "ind": 51982,
+            "level": 2,
+            "value": 639
+        },
+        {
+            "name": "schoolnet_3.0year_c5",
+            "show_name": "year_c5",
+            "ind": 52054,
+            "level": 2,
+            "value": 36
+        },
+        {
+            "name": "schoolnet_5.0year_c5",
+            "show_name": "year_c5",
+            "ind": 54084,
+            "level": 2,
+            "value": 50
+        },
+        {
+            "name": "schoolnet_11.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64874,
+            "level": 2,
+            "value": 26
+        },
+        {
+            "name": "schoolnet_914.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64880,
+            "level": 2,
+            "value": 986
+        },
+        {
+            "name": "schoolnet_12.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64810,
+            "level": 2,
+            "value": 85
+        },
+        {
+            "name": "schoolnet_13.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64860,
+            "level": 2,
+            "value": 24
+        },
+        {
+            "name": "schoolnet_801.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64898,
+            "level": 2,
+            "value": 247
+        },
+        {
+            "name": "schoolnet_804.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64902,
+            "level": 2,
+            "value": 278
+        },
+        {
+            "name": "schoolnet_806.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64892,
+            "level": 2,
+            "value": 330
+        },
+        {
+            "name": "schoolnet_802.0year_c5",
+            "show_name": "year_c5",
+            "ind": 53566,
+            "level": 2,
+            "value": 92
+        },
+        {
+            "name": "schoolnet_807.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64832,
+            "level": 2,
+            "value": 355
+        },
+        {
+            "name": "schoolnet_808.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64886,
+            "level": 2,
+            "value": 354
+        },
+        {
+            "name": "schoolnet_809.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64736,
+            "level": 2,
+            "value": 236
+        },
+        {
+            "name": "schoolnet_810.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64618,
+            "level": 2,
+            "value": 267
+        },
+        {
+            "name": "schoolnet_915.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64900,
+            "level": 2,
+            "value": 615
+        },
+        {
+            "name": "schoolnet_917.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64850,
+            "level": 2,
+            "value": 1000
+        },
+        {
+            "name": "schoolnet_916.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64872,
+            "level": 2,
+            "value": 301
+        },
+        {
+            "name": "schoolnet_918.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64884,
+            "level": 2,
+            "value": 537
+        },
+        {
+            "name": "schoolnet_919.0year_c5",
+            "show_name": "year_c5",
+            "ind": 64896,
+            "level": 2,
+            "value": 641
+        },
+        {
+            "name": "schoolnet_914.0year_c6",
+            "show_name": "year_c6",
+            "ind": 71598,
+            "level": 2,
+            "value": 1411
+        },
+        {
+            "name": "schoolnet_12.0year_c6",
+            "show_name": "year_c6",
+            "ind": 71580,
+            "level": 2,
+            "value": 141
+        },
+        {
+            "name": "schoolnet_919.0year_c6",
+            "show_name": "year_c6",
+            "ind": 71600,
+            "level": 2,
+            "value": 935
+        },
+        {
+            "name": "schoolnet_918.0year_c6",
+            "show_name": "year_c6",
+            "ind": 71586,
+            "level": 2,
+            "value": 862
+        },
+        {
+            "name": "schoolnet_914.0year_c7",
+            "show_name": "year_c7",
+            "ind": 77504,
+            "level": 2,
+            "value": 1285
+        },
+        {
+            "name": "schoolnet_12.0year_c7",
+            "show_name": "year_c7",
+            "ind": 77502,
+            "level": 2,
+            "value": 152
+        },
+        {
+            "name": "schoolnet_919.0year_c7",
+            "show_name": "year_c7",
+            "ind": 77488,
+            "level": 2,
+            "value": 781
+        },
+        {
+            "name": "schoolnet_918.0year_c7",
+            "show_name": "year_c7",
+            "ind": 77500,
+            "level": 2,
+            "value": 734
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 52053
+        },
+        {
+            "source": 52053,
+            "target": 11776
+        },
+        {
+            "source": 0,
+            "target": 12421
+        },
+        {
+            "source": 12421,
+            "target": 12422
+        },
+        {
+            "source": 0,
+            "target": 54083
+        },
+        {
+            "source": 54083,
+            "target": 12370
+        },
+        {
+            "source": 0,
+            "target": 12243
+        },
+        {
+            "source": 12243,
+            "target": 12244
+        },
+        {
+            "source": 0,
+            "target": 38671
+        },
+        {
+            "source": 38671,
+            "target": 12416
+        },
+        {
+            "source": 0,
+            "target": 64735
+        },
+        {
+            "source": 64735,
+            "target": 12322
+        },
+        {
+            "source": 0,
+            "target": 38775
+        },
+        {
+            "source": 38775,
+            "target": 12396
+        },
+        {
+            "source": 0,
+            "target": 64617
+        },
+        {
+            "source": 64617,
+            "target": 12404
+        },
+        {
+            "source": 0,
+            "target": 64873
+        },
+        {
+            "source": 64873,
+            "target": 12178
+        },
+        {
+            "source": 0,
+            "target": 12413
+        },
+        {
+            "source": 12413,
+            "target": 12414
+        },
+        {
+            "source": 0,
+            "target": 64885
+        },
+        {
+            "source": 64885,
+            "target": 12412
+        },
+        {
+            "source": 0,
+            "target": 64831
+        },
+        {
+            "source": 64831,
+            "target": 12408
+        },
+        {
+            "source": 0,
+            "target": 12423
+        },
+        {
+            "source": 12423,
+            "target": 12424
+        },
+        {
+            "source": 0,
+            "target": 77501
+        },
+        {
+            "source": 77501,
+            "target": 12366
+        },
+        {
+            "source": 0,
+            "target": 38767
+        },
+        {
+            "source": 38767,
+            "target": 12400
+        },
+        {
+            "source": 0,
+            "target": 12345
+        },
+        {
+            "source": 12345,
+            "target": 12346
+        },
+        {
+            "source": 0,
+            "target": 12425
+        },
+        {
+            "source": 12425,
+            "target": 12426
+        },
+        {
+            "source": 0,
+            "target": 38739
+        },
+        {
+            "source": 38739,
+            "target": 12430
+        },
+        {
+            "source": 0,
+            "target": 38785
+        },
+        {
+            "source": 38785,
+            "target": 12330
+        },
+        {
+            "source": 0,
+            "target": 38701
+        },
+        {
+            "source": 38701,
+            "target": 12420
+        },
+        {
+            "source": 0,
+            "target": 12401
+        },
+        {
+            "source": 12401,
+            "target": 12402
+        },
+        {
+            "source": 0,
+            "target": 38727
+        },
+        {
+            "source": 38727,
+            "target": 12392
+        },
+        {
+            "source": 0,
+            "target": 12367
+        },
+        {
+            "source": 12367,
+            "target": 12368
+        },
+        {
+            "source": 0,
+            "target": 64891
+        },
+        {
+            "source": 64891,
+            "target": 12296
+        },
+        {
+            "source": 0,
+            "target": 53565
+        },
+        {
+            "source": 53565,
+            "target": 12308
+        },
+        {
+            "source": 0,
+            "target": 64859
+        },
+        {
+            "source": 64859,
+            "target": 12332
+        },
+        {
+            "source": 0,
+            "target": 64897
+        },
+        {
+            "source": 64897,
+            "target": 12434
+        },
+        {
+            "source": 0,
+            "target": 64901
+        },
+        {
+            "source": 64901,
+            "target": 12304
+        },
+        {
+            "source": 0,
+            "target": 38415
+        },
+        {
+            "source": 38415,
+            "target": 12122
+        },
+        {
+            "source": 52053,
+            "target": 25566
+        },
+        {
+            "source": 54083,
+            "target": 25520
+        },
+        {
+            "source": 38415,
+            "target": 25166
+        },
+        {
+            "source": 38671,
+            "target": 25518
+        },
+        {
+            "source": 0,
+            "target": 77503
+        },
+        {
+            "source": 77503,
+            "target": 25546
+        },
+        {
+            "source": 64873,
+            "target": 25508
+        },
+        {
+            "source": 64735,
+            "target": 25540
+        },
+        {
+            "source": 64617,
+            "target": 25556
+        },
+        {
+            "source": 38775,
+            "target": 25552
+        },
+        {
+            "source": 0,
+            "target": 77499
+        },
+        {
+            "source": 77499,
+            "target": 25554
+        },
+        {
+            "source": 77501,
+            "target": 25516
+        },
+        {
+            "source": 0,
+            "target": 77487
+        },
+        {
+            "source": 77487,
+            "target": 25548
+        },
+        {
+            "source": 38727,
+            "target": 25406
+        },
+        {
+            "source": 64885,
+            "target": 25542
+        },
+        {
+            "source": 64831,
+            "target": 25530
+        },
+        {
+            "source": 38739,
+            "target": 25510
+        },
+        {
+            "source": 38785,
+            "target": 25562
+        },
+        {
+            "source": 38701,
+            "target": 25506
+        },
+        {
+            "source": 64897,
+            "target": 25568
+        },
+        {
+            "source": 64901,
+            "target": 25558
+        },
+        {
+            "source": 64891,
+            "target": 25514
+        },
+        {
+            "source": 38767,
+            "target": 25544
+        },
+        {
+            "source": 0,
+            "target": 64899
+        },
+        {
+            "source": 64899,
+            "target": 25522
+        },
+        {
+            "source": 0,
+            "target": 64871
+        },
+        {
+            "source": 64871,
+            "target": 25476
+        },
+        {
+            "source": 0,
+            "target": 64849
+        },
+        {
+            "source": 64849,
+            "target": 25564
+        },
+        {
+            "source": 64859,
+            "target": 25490
+        },
+        {
+            "source": 53565,
+            "target": 24962
+        },
+        {
+            "source": 52053,
+            "target": 38790
+        },
+        {
+            "source": 54083,
+            "target": 38746
+        },
+        {
+            "source": 38415,
+            "target": 38416
+        },
+        {
+            "source": 64873,
+            "target": 38738
+        },
+        {
+            "source": 77503,
+            "target": 38794
+        },
+        {
+            "source": 64735,
+            "target": 38730
+        },
+        {
+            "source": 64617,
+            "target": 38780
+        },
+        {
+            "source": 38775,
+            "target": 38776
+        },
+        {
+            "source": 77499,
+            "target": 38778
+        },
+        {
+            "source": 77501,
+            "target": 38662
+        },
+        {
+            "source": 77487,
+            "target": 38760
+        },
+        {
+            "source": 38727,
+            "target": 38728
+        },
+        {
+            "source": 64831,
+            "target": 38758
+        },
+        {
+            "source": 64859,
+            "target": 38782
+        },
+        {
+            "source": 38739,
+            "target": 38740
+        },
+        {
+            "source": 38785,
+            "target": 38786
+        },
+        {
+            "source": 38701,
+            "target": 38702
+        },
+        {
+            "source": 64897,
+            "target": 38792
+        },
+        {
+            "source": 64901,
+            "target": 38686
+        },
+        {
+            "source": 64891,
+            "target": 38744
+        },
+        {
+            "source": 38767,
+            "target": 38768
+        },
+        {
+            "source": 38671,
+            "target": 38672
+        },
+        {
+            "source": 64885,
+            "target": 38706
+        },
+        {
+            "source": 64899,
+            "target": 38748
+        },
+        {
+            "source": 64849,
+            "target": 38788
+        },
+        {
+            "source": 64871,
+            "target": 38708
+        },
+        {
+            "source": 53565,
+            "target": 38228
+        },
+        {
+            "source": 52053,
+            "target": 38866
+        },
+        {
+            "source": 54083,
+            "target": 38966
+        },
+        {
+            "source": 64873,
+            "target": 39006
+        },
+        {
+            "source": 77501,
+            "target": 39236
+        },
+        {
+            "source": 64859,
+            "target": 39244
+        },
+        {
+            "source": 64897,
+            "target": 39756
+        },
+        {
+            "source": 53565,
+            "target": 39942
+        },
+        {
+            "source": 64901,
+            "target": 40500
+        },
+        {
+            "source": 64891,
+            "target": 41156
+        },
+        {
+            "source": 64831,
+            "target": 41886
+        },
+        {
+            "source": 64885,
+            "target": 42640
+        },
+        {
+            "source": 64735,
+            "target": 43122
+        },
+        {
+            "source": 64617,
+            "target": 43684
+        },
+        {
+            "source": 77503,
+            "target": 45658
+        },
+        {
+            "source": 64899,
+            "target": 46924
+        },
+        {
+            "source": 64871,
+            "target": 47526
+        },
+        {
+            "source": 64849,
+            "target": 49548
+        },
+        {
+            "source": 77499,
+            "target": 50704
+        },
+        {
+            "source": 77487,
+            "target": 51982
+        },
+        {
+            "source": 52053,
+            "target": 52054
+        },
+        {
+            "source": 54083,
+            "target": 54084
+        },
+        {
+            "source": 64873,
+            "target": 64874
+        },
+        {
+            "source": 77503,
+            "target": 64880
+        },
+        {
+            "source": 77501,
+            "target": 64810
+        },
+        {
+            "source": 64859,
+            "target": 64860
+        },
+        {
+            "source": 64897,
+            "target": 64898
+        },
+        {
+            "source": 64901,
+            "target": 64902
+        },
+        {
+            "source": 64891,
+            "target": 64892
+        },
+        {
+            "source": 53565,
+            "target": 53566
+        },
+        {
+            "source": 64831,
+            "target": 64832
+        },
+        {
+            "source": 64885,
+            "target": 64886
+        },
+        {
+            "source": 64735,
+            "target": 64736
+        },
+        {
+            "source": 64617,
+            "target": 64618
+        },
+        {
+            "source": 64899,
+            "target": 64900
+        },
+        {
+            "source": 64849,
+            "target": 64850
+        },
+        {
+            "source": 64871,
+            "target": 64872
+        },
+        {
+            "source": 77499,
+            "target": 64884
+        },
+        {
+            "source": 77487,
+            "target": 64896
+        },
+        {
+            "source": 77503,
+            "target": 71598
+        },
+        {
+            "source": 77501,
+            "target": 71580
+        },
+        {
+            "source": 77487,
+            "target": 71600
+        },
+        {
+            "source": 77499,
+            "target": 71586
+        },
+        {
+            "source": 77503,
+            "target": 77504
+        },
+        {
+            "source": 77501,
+            "target": 77502
+        },
+        {
+            "source": 77487,
+            "target": 77488
+        },
+        {
+            "source": 77499,
+            "target": 77500
+        }
+    ]
+}

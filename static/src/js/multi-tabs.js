@@ -2,6 +2,7 @@ function newTab() {
     composeCount = composeCount + 1; //increment compose count
     var count = composeCount;
     currentID = "tab" + count; //this is id on tab content div where the
+    track_status[currentID]={'tabItem1':{'checkbox':new Set(),'slider':new Set()},'tabItem2':{'checkbox':new Set(),'slider':new Set()}};
     $('.multi-link').removeClass("active show")
     $('.multi-pane').removeClass("active show")
 
@@ -14,7 +15,6 @@ function newTab() {
 }
 
 $('#new-tab').click(function (e) {
-
     newTab();
     drawOnetab();
     $(".fil_v").attr("style","display:none;")
@@ -24,7 +24,7 @@ $('#new-tab').click(function (e) {
 
 $(document).on('click', '.multi-link', function(){
     currentID = $(this)[0].id.substring(1);
-    console.log([currentID,$(this[0])])
+
     if(!(currentID in parent)) {
         $('#svg'+currentID).width(width)
         $('#svg'+currentID).height(height)
