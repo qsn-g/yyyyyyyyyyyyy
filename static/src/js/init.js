@@ -28,20 +28,20 @@ track_status[currentID]={'tabItem1':{'checkbox':new Array(),'slider':new Array()
 
 
 function get_data(){
-  // $.get('/init_'+change_data+'',function(data,status){
-  //   for(let j in data['v']['con']){
-  //     data['v']['con'][j]=data['v']['con'][j].map(Number)
-  //   }
-  //   fil_v={'con':data['v']['con'],'cat':data['v']['cat']}
-  //   fil_user_o = data['v']['fil']
-  //
-  //   for(let j in data['e']['con']){
-  //     data['e']['con'][j]=data['e']['con'][j].map(Number)
-  //   }
-  //   fil_e={'con':data['e']['con'],'cat':data['e']['cat']}
-  //   fil_user_e = data['e']['fil']
-  //   initfilter();
-  // })
+  $.get('/init_'+change_data+'',function(data,status){
+    for(let j in data['v']['con']){
+      data['v']['con'][j]=data['v']['con'][j].map(Number)
+    }
+    fil_v={'con':data['v']['con'],'cat':data['v']['cat']}
+    fil_user_o = data['v']['fil']
+
+    for(let j in data['e']['con']){
+      data['e']['con'][j]=data['e']['con'][j].map(Number)
+    }
+    fil_e={'con':data['e']['con'],'cat':data['e']['cat']}
+    fil_user_e = data['e']['fil']
+    initfilter();
+  })
   $.get('/infor_'+change_data+'',function(data,status){
     infoDict = data;
   })
@@ -68,9 +68,9 @@ $('#content-his').append(
 
 $('#history').append('<h3 style="text-align:center; opacity:0.5;""> No History</h3>')
 width = $('#'+currentID).width() ;
-height = $('#'+currentID).height() ;
+height = $('#'+currentID).height()+40 ;
 svgWidth = {1: width, 0: width+controlWidth}
-svgHeight = {1: height, 0: height+historyWidth}
+svgHeight = {1: height, 0: height+historyWidth+60}
 
 
 function hexToRGB(hex, alpha) {

@@ -48,6 +48,12 @@ def fildata():
     fil['v']=output_filter_v()
     fil['e']=output_filter_e()
     return fil
+@app.route('/init_bully', methods=["GET"])
+def fildata_b():
+    fil={}
+    fil['v']=output_filter_b_v()
+    fil['e']=output_filter_b_e()
+    return fil
 
 @app.route('/detail_fb', methods=['POST'])
 def select_data():
@@ -62,10 +68,6 @@ def select_data_bu():
     temp = json.loads(data)
     u = need_data_b(temp,g_b,hir_b)
     return (output_json_b(u))
-
-# @app.route('/Select_Local', methods=['GET'])
-# def Local():
-#     return
 
 if __name__ == '__main__':
     app.run()

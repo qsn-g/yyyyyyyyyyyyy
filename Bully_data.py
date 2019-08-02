@@ -84,7 +84,8 @@ def pre_dic_b():
 			temp=eval("v_c"+i+"net")
 			l1='schoolnet_'+str(temp[v]["c"+i+"net"])
 			l2='schoolnet_'+str(temp[v]["c"+i+"net"])+'year_c'+i
-			if str(temp[v]['c'+i+'net'])!="":
+			# print(str(temp[v]["c"+i+"net"]))
+			if str(temp[v]['c'+i+'net'])!="unk":
 				new_hir_b[l1].add(v_userid[v]["userid"])
 				new_hir_b[l2].add(v_userid[v]["userid"])
 				for w in v.out_neighbors() or w in v.in_neighbors():
@@ -148,7 +149,7 @@ def output_json_b(u):
 	all_data['links']=links
 	return(all_data)
 #===============output_filter information=====
-def output_filter_v():
+def output_filter_b_v():
 	dictio={}
 	key=list(g.vertex_properties.keys())
 	value=list(g.vertex_properties.values())
@@ -159,12 +160,14 @@ def output_filter_v():
 	for i in range(len(key)):
 		fil[key[i]]=set()
 		dictio[key[i]]= value[i]
-	del fil['fbid']
 	del fil['userid']
-	del fil['major']
-	del fil['schregion']
-	del fil['school']
-	del fil['grade']
+	del fil['c1net']
+	del fil['c2net']
+	del fil['c3net']
+	del fil['c4net']
+	del fil['c5net']
+	del fil['c6net']
+	del fil['c7net']
 	for vertex in g.vertices():
 		for i in fil:
 			fil[i].add(dictio[i][vertex][i])
@@ -187,7 +190,7 @@ def output_filter_v():
 	final['fil']=new
 	return(final)
 
-def output_filter_e():
+def output_filter_b_e():
 	dictio={}
 	key=list(g.edge_properties.keys())
 	value=list(g.edge_properties.values())
@@ -219,7 +222,6 @@ def output_filter_e():
 		new[i]={}
 		for j in final[i]:
 			new[i][j]=[]
-
 
 	final['fil']=new
 	return(final)

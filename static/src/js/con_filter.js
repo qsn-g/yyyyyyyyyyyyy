@@ -142,7 +142,7 @@ function getfil_e(){
     var judge =1;
 
     for (let i in fil_user['e']['cat']){
-      if(fil_user['e']['cat'][i].indexOf(d['target'][i])<0 ||fil_user['e']['cat'][i].indexOf(d['source'][i])<0){
+      if(fil_user['e']['cat'][i].indexOf(d[i])<0){
         judge=judge*0
       }
     }
@@ -214,7 +214,7 @@ link.each(function(d){
     }
   }
   for (let i in fil_user['e']['cat']){
-    if(fil_user['e']['cat'][i].indexOf(d['target'][i])<0 ||fil_user['e']['cat'][i].indexOf(d['source'][i])<0){
+    if(fil_user['e']['cat'][i].indexOf(d[i])<0 ||fil_user['e']['cat'][i].indexOf(d[i])<0){
       judge=judge*0
     }
   }

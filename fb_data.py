@@ -3,9 +3,6 @@ import graph_tool.all as gt
 import matplotlib.pylab as matplotlib
 import csv
 def my_form_post():
-
-	# def my_form_post():
-
 	with open("./static/src/data/sampledata.csv", "r") as csv_connect:
 		next(csv_connect)
 		edgesdata = list(csv.reader(csv_connect))
@@ -14,6 +11,7 @@ def my_form_post():
 		nodesdata = list(csv.reader(csv_explain))
 	global g,v_userid,v_fbid,v_school,v_schregion,v_gender,v_birthyear,v_major,v_marriage,v_grade,v_scorelevel,v_liveplace,v_height,v_weight,e_target,e_source,e_date,e_dailycount
 	g = gt.Graph (directed = True)
+
 	v_userid = g.new_vertex_property("object")
 	v_fbid = g.new_vertex_property("object")
 	v_school = g.new_vertex_property("object")

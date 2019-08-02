@@ -43,9 +43,12 @@ $("#hisBut").click(function() {
 })
 
 function drawOverview() {
-
+  var radius=7;
     var force = d3.forceSimulation()
-       .force("charge", d3.forceManyBody())
+       .velocityDecay(0.1)
+       .force("x", d3.forceX(width / 2).strength(.05))
+       .force("y", d3.forceY(height / 2).strength(.05))
+       .force("charge", d3.forceManyBody().strength(-17))
        .force("link", d3.forceLink().id(function(d) { return d.ind }))
        .force("center", d3.forceCenter(width / 2, height / 2));
 
@@ -61,6 +64,7 @@ function drawOverview() {
 
     $.get("/overview_"+change_data+"",function(data,status){
         overview_data=data;
+
         force
             .nodes(overview_data.nodes)
             .force("link").links(overview_data.links)
@@ -70,19 +74,18 @@ function drawOverview() {
             .append("line")
             .attr("class", "link");
 
-        var node = svg.selectAll(".node")
+        var node = svg.selectAll("circle")
             .data(overview_data.nodes)
-            .enter().append("g")
+            .enter().append("circle")
             .attr("class", "node")
-            .attr('id',function(d){return 'overnode'+d.name})
             .call(d3.drag()
             .on("start", dragstarted)
             .on("drag", dragged)
             .on("end", dragended))
 
-        node.append('circle')
-            .attr('class', function (d) { return 'node' + currentID + " " + currentID + "-" + d.name; })
-            .attr('r', 7)
+        node.attr('class', function (d) { return 'node' + currentID + " " + currentID + "-" + d.name; })
+            .attr('id',function(d){return 'overnode'+d.name})
+            .attr('r', radius - .75)
             .attr('fill', function (d) { return color(d.level); });
 
         // =========== events =============
@@ -123,7 +126,7 @@ function drawOverview() {
                 }
                 else {
                     d3.selectAll("." + currentID + '-' + d.name)
-                    .attr("r", 7);
+                    .attr("r", radius - .75);
                 }
             }
         }).on('click', function(d){
@@ -137,21 +140,38 @@ function drawOverview() {
         });
 
         force.on("tick", function () {
-            link.attr("x1", function (d) {
-                    return d.source.x;
-                })
-                .attr("y1", function (d) {
-                    return d.source.y;
-                })
-                .attr("x2", function (d) {
-                    return d.target.x;
-                })
-                .attr("y2", function (d) {
-                    return d.target.y;
-                });
-            node.attr("transform", function (d) {
-                return "translate(" + d.x + "," + d.y + ")";
-            });
+
+          node.attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
+              .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
+
+          link.attr("x1", function(d) { return d.source.x; })
+              .attr("y1", function(d) { return d.source.y; })
+              .attr("x2", function(d) { return d.target.x; })
+              .attr("y2", function(d) { return d.target.y; });
+
+
+
+            // link.attr("x1", function (d) {
+            //         return d.source.x;
+            //     })
+            //     .attr("y1", function (d) {
+            //         return d.source.y;
+            //     })
+            //     .attr("x2", function (d) {
+            //         return d.target.x;
+            //     })
+            //     .attr("y2", function (d) {
+            //         return d.target.y;
+            //     });
+            // node.attr("transform", function (d) {
+            //   console.log(d.x)
+            //     return "translate(" + d.x + "," + d.y + ")";
+            // });
+
+
+
+
+
         });
     // });
 
